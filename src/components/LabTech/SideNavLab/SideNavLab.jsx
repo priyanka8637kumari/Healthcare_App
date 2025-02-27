@@ -8,14 +8,16 @@ import messageNumIcon from "../../../assets/minji/messagesnumicon.png"
 import testresultIcon from "../../../assets/minji/testresult.png"
 import securityIcon from "../../../assets/minji/securityalert.png"
 import bookIcon from "../../../assets/minji/book.png"
+import logo from "../../../assets/landingPage/logo.png"
 
 
 const SideNavLab = () => {
   return (
     <div className={styles.sidebar}>
-      <div className={styles.logo}>
-        <h2>Medihub</h2>
-      </div>
+     <div className={styles.navbarBrand}>
+                  <img src={logo} alt="Care Sync Logo" className={styles.logo} />
+                  <span className={styles.brandName}>MediHub</span>
+                </div>
       <ul className={styles.list}>
         <li className={`${styles.listItem} ${styles.dashboardMenu}`}>
           <div className={styles.itemWrapper}>
