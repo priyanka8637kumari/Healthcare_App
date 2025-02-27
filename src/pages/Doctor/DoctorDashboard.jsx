@@ -1,6 +1,6 @@
 import React from 'react'
-import SideNavDoc from "../../components/SideNavDoctor/SideNavDoc"
-import HeaderDoctor from "../../components/HeaderDoctor/HeaderDoctor"
+import SideNavDoc from "../../components/Doctor/SideNavDoctor/SideNavDoc"
+import HeaderDoctor from "../../components/Doctor/HeaderDoctor/HeaderDoctor"
 
 const DoctorDashboard = () => {
   return (
