@@ -1,17 +1,18 @@
 /* Navbar.css */
 .navbar {
-    background-color: #f0f8ff; 
-    padding: 20px;
+    background-color: #feffff; 
+    padding: 20px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     font-family: sans-serif; 
+    box-shadow: 0 4px 10px #dad6d6
   }
   
   .navbarBrand{
     display: flex;
     align-items: center;
-    color: #20b2aa; 
+    color: var(--primary-color); 
     font-size: 1.5em;
     font-weight: bold;
   }

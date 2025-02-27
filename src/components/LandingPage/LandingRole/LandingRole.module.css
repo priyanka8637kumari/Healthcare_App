@@ -1,29 +1,29 @@
 .container {
     text-align: center;
-    background-color: #eaf6fc;
+    background-color: #E9F6F9;
     padding: 40px;
   }
   
   .heading {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 36px;
+    font-weight: semibold;
     margin-bottom: 20px;
-    color: #0077b6;
+    color: var(--primary-color);
   }
   
   .roles {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 80px;
   }
   
   .card {
     background: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px #dad6d6;
     text-align: center;
-    width: 220px;
+    width: 350px;
   }
   
   .image {
@@ -32,18 +32,19 @@
   }
   
   .roleName {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    /* font-weight: bold; */
     margin: 10px 0;
   }
   
   .loginButton {
-    background-color: #008cba;
+    width: 150px;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 10px 15px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
   }
   
