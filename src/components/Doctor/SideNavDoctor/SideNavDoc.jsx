@@ -65,7 +65,12 @@ const SideNavDoc = () => {
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={settingIcon} alt="Settings Icon" />
+            <img 
+               src={settingIcon} 
+               alt="Settings Icon" 
+              style={{ width: '25px', height: '25px' }}
+               />
+            
             <span>Settings</span>
           </div>
         </li>
