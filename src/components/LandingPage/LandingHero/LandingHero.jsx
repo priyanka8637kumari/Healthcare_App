@@ -9,6 +9,7 @@ const HeroSection = () => {
           <h1 className={styles.heroTitle}>Dummy text title</h1>
           <p className={styles.heroDescription}>
             Qualified doctors, handled directly by general doctors and
+            experienced specialists doctors. Qualified doctors, handled directly by general doctors and
             experienced specialists doctors.
           </p>
           <button className={styles.heroButton}>Confirm your role</button>
