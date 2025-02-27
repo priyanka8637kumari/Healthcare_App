@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./SideNavDoc.module.css";
 
-import patientsIcon from "../../assets/minji/patientsicon.png"
-import dashboardicon from "../../assets/minji/dashboardicon.png"
-import prescriptionIcon from "../../assets/minji/prescriptionicon.png"
-import medicalrecordsIcon from "../../assets/minji/medicalrecordicon.png"
-import appointmentIcon from "../../assets/minji/appointmenticon.png"
-import labreportsIcon from "../../assets/minji/labreportsicon.png"
-import messageIcon from "../../assets/minji/messageicon.png"
-import settingIcon from "../../assets/minji/settingicon.png"
-import logoutIcon from "../../assets/minji/logouticon.png"
-import messageNumIcon from "../../assets/minji/messagesnumicon.png"
+import patientsIcon from "../../../assets/minji/patientsicon.png"
+import dashboardicon from "../../../assets/minji/dashboardicon.png"
+import prescriptionIcon from "../../../assets/minji/prescriptionicon.png"
+import medicalrecordsIcon from "../../../assets/minji/medicalrecordicon.png"
+import appointmentIcon from "../../../assets/minji/appointmenticon.png"
+import labreportsIcon from "../../../assets/minji/labreportsicon.png"
+import messageIcon from "../../../assets/minji/messageicon.png"
+import settingIcon from "../../../assets/minji/settingicon.png"
+import logoutIcon from "../../../assets/minji/logouticon.png"
+import messageNumIcon from "../../../assets/minji/messagesnumicon.png"
 
 
 const SideNavDoc = () => {

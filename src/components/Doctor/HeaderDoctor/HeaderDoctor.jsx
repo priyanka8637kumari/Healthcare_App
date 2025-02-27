@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./HeaderDoctor.module.css"
-import doctorImg from "../../assets/minji/doctorlayne.png"
-import arrowIcon from "../../assets/minji/arrowIcon.png"
-import bellIcon from "../../assets/minji/bellIcon.png"
+import doctorImg from "../../../assets/minji/doctorlayne.png"
+import arrowIcon from "../../../assets/minji/arrowIcon.png"
+import bellIcon from "../../../assets/minji/bellIcon.png"
+
+
 
 const HeaderDoctor = () => {
   return (
