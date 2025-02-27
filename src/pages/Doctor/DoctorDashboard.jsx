@@ -1,5 +1,5 @@
 import React from 'react'
-import SideNavDoc from "../components/SideNavDoctor/SideNavDoc"
+import SideNavDoc from "../../components/SideNavDoctor/SideNavDoc"
 
 const DoctorDashboard = () => {
   return (
