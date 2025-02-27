@@ -10,6 +10,7 @@ import labreportsIcon from "../../assets/minji/labreportsicon.png"
 import messageIcon from "../../assets/minji/messageicon.png"
 import settingIcon from "../../assets/minji/settingicon.png"
 import logoutIcon from "../../assets/minji/logouticon.png"
+import messageNumIcon from "../../assets/minji/messagesnumicon.png"
 
 
 const SideNavDoc = () => {
@@ -59,6 +60,7 @@ const SideNavDoc = () => {
           <div className={styles.itemWrapper}>
             <img src={messageIcon} alt="Messages Icon" />
             <span>Messages</span>
+            <img src={messageNumIcon} alt="Messages Number Icon"  />
           </div>
         </li>
         <li className={styles.listItem}>
