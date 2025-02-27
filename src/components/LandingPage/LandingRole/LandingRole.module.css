@@ -1,0 +1,53 @@
+.container {
+    text-align: center;
+    background-color: #eaf6fc;
+    padding: 40px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0077b6;
+  }
+  
+  .roles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .roleName {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .loginButton {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .loginButton:hover {
+    background-color: #005f73;
+  }
+  
