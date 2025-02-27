@@ -3,7 +3,7 @@ import styles from "./LandingNavbar.module.css";
 import logo from "../../../assets/landingPage/logo.png"; 
 import phoneIcon from "../../../assets/landingPage/phone.png";
 
-const Navbar = () => {
+const LandingNavbar = () => {
   return (
     <nav className={styles.navbar}>
     <div className={styles.navbarBrand}>
@@ -13,7 +13,7 @@ const Navbar = () => {
     <ul className={styles.navbarMenu}>
       <li className={styles.navbarItem}><a href="/">Home</a></li>
       <li className={styles.navbarItem}><a href="/about">About Us</a></li>
-      <li className={styles.navbarItem}><a href="/services">Our Services</a></li>
+      <li className={styles.navbarItem}><a href="/services">Our Features</a></li>
     </ul>
     <button className={styles.supportButton}>
       <img src={phoneIcon} alt="Phone Icon" className={styles.phoneIcon} />
@@ -22,4 +22,4 @@ const Navbar = () => {
   </nav>
   );
 };
-export default Navbar;
+export default LandingNavbar;

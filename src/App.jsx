@@ -1,19 +1,15 @@
-import LandingNavbar from './components/LandingPage/LandingNavbar/LandingNavbar'
-
-
-import styles from './App.module.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from "./pages/Landingpage"
 
 function App() {
-  
-
   return (
-    <>
-     <div className={styles.App}>
-      <LandingNavbar />
-
-     </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/doctor-dashboard" element={<DoctorDashboardPage />}> </Route> */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
