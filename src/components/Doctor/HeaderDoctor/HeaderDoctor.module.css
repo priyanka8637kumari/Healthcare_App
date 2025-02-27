@@ -61,17 +61,17 @@
     border: none;
     background: var(--primary-color);
     color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 12px 14px;
+    border-radius: 10px;  
     cursor: pointer;
   }
   
   .emergencyBtn {
     background: none;
     color: #e74c3c;
-    padding: 8px 15px;
+    padding: 12px 14px;
     border: 1px solid #e74c3c;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
   }
