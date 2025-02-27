@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DoctorDashboard = () => {
+const ViewAppointments = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const DoctorDashboard = () => {
   )
 }
 
-export default DoctorDashboard
+export default ViewAppointments
