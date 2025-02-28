@@ -15,7 +15,7 @@ const FeaturesSection = () => {
     { image: medicalRecord, title: "Unified Medical Records" },
     { image: smartIcon, title: "Smart Appointment" },
     { image: labTest, title: "Lab Test Analysis" },
-    { image: callIcon, title: "Emergency Alert & Fast Response System" },
+    { image: callIcon, title: "Emergency Alert" },
   ];
 
   return (

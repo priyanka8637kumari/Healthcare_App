@@ -1,7 +1,8 @@
 .featuresSection {
     background-color: #E9F6F9; 
-    padding: 40px;
+    padding: 120px 40px 40px 40px;
     text-align: center;
+    height: 100vh;
   }
   
   .featuresSection h2 {
@@ -39,8 +40,8 @@
   
   
   .imageContainer img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
   }
   
   .featureItem p {
