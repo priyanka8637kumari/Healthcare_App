@@ -3,6 +3,8 @@ import LandingNavBar from "../../components/LandingPage/LandingNavbar/LandingNav
 import LandingHero from "../../components/LandingPage/LandingHero/LandingHero";
 import LandingRole from "../../components/LandingPage/LandingRole/LandingRole";
 import LandingAbout from "../../components/LandingPage/LandingAbout/LandingAbout";
+import LandingFeature from "../../components/LandingPage/LandingFeature/LandingFeature";
+import LandingFooter from "../../components/LandingPage/LandingFooter/LandingFooter";
 
 const Landingpage = () => {
   return (
@@ -11,6 +13,8 @@ const Landingpage = () => {
       <LandingHero />
       <LandingRole />
       <LandingAbout />
+      <LandingFeature />
+      <LandingFooter />
     </div>
   )
 }
