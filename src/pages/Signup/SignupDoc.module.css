@@ -1,0 +1,158 @@
+/* General Container */
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.leftSide, .rightSide {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;  
+    
+}
+/* Left Side - Image */
+.leftSide {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    
+}
+
+.rightSide {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px; 
+}
+
+.homeButton, .backButton {
+    position: absolute;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.backButton {
+    left: 20px;
+}
+
+.homeButton {
+    right: 20px;
+}
+
+.loginBox {
+    width: 500px;       
+    text-align: center;   
+    
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    
+}
+
+.brandName {
+    color: #20b2aa;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+/* Welcome Text */
+.welcomeText {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.subText {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 35px;
+}
+
+/* Input Fields */
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    gap: 10px;
+}
+
+/* Create Account Button */
+.signInButton {
+    width: 100%;
+    background-color: #20b2aa;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.signInButton:hover {
+    background-color: #20b2aa;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.divider hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+/* Links */
+.links {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.signupLink {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signupLink:hover {
+    text-decoration: underline;
+}
