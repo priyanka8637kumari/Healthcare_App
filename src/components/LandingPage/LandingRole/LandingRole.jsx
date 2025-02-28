@@ -18,7 +18,7 @@ const roles = [
 
   const RoleSelection = () => {
     return (
-      <section className={styles.container}>
+      <section className={styles.container} id="landingRole">
         <h2 className={styles.heading}>Welcome! Choose your role</h2>
         <div className={styles.roles}>
           {roles.map((role, index) => (
