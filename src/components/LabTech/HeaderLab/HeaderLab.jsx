@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "../../Doctor/HeaderDoctor/HeaderDoctor.module.css"
-// import doctorImg from "../../../assets/minji/doctorlayne.png"
+import labTechImg from "../../../assets/minji/labtechnician.png"
 import arrowIcon from "../../../assets/minji/arrowIcon.png"
 import bellIcon from "../../../assets/minji/bellIcon.png"
+
 
 
 const HeaderLab = () => {
@@ -10,12 +11,16 @@ const HeaderLab = () => {
     <header className={styles.header}>
       <div className={styles.welcome}>
         <div className={styles.welcomeText}>
-          <h3>Välkommen Viktor Carlström</h3>
+          <h3>Välkommen Jere Mikael Pöyhönen </h3>
           <h5>Laboratorietekniker</h5>
         </div>
         <div className={styles.welcomeImage}>
-          {/* <img src={doctorImg} alt="Doctor img" className={styles.doctorImg} /> */}
-        </div>
+            <img 
+                src={labTechImg} 
+                alt="Lab Tech img" 
+                style={{ width: '60px', height: '60px', objectFit: 'cover' }}
+            />
+            </div>
         <div className={styles.iconContainer}>
         <div className={`${styles.iconWrapper} ${styles.iconWrapperWithBorder}`}>
           <img src={arrowIcon} alt="Arrow icon" />
@@ -32,6 +37,7 @@ const HeaderLab = () => {
         <option>Svenska</option>
         <option>English
           </option>
+          <option>Finnish</option>
           <option>Korean</option>
           <option>Hindi</option>
           <option>Japanese</option>

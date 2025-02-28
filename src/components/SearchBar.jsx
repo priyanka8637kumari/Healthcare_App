@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LabReports = () => {
+const SearchBar = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const LabReports = () => {
   )
 }
 
-export default LabReports
+export default SearchBar

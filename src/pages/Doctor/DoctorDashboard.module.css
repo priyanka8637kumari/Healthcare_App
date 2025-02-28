@@ -1,0 +1,262 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 8rem; 
+  }
+  
+  .mainContent {
+    flex: 1;
+    margin-left: 300px; 
+    padding: 2rem;
+    background-color: #f0f9fb; 
+  }
+  
+  .searchBar {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .welcomeSection {
+    margin-bottom: 2rem;
+    background: linear-gradient(10deg, #1FA0BD 0%, #5FD8F3 100%);
+    padding: 2rem;
+    color: white;
+    border-radius: 1rem;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .welcomeContent {
+    max-width: 70%;
+  }
+  
+  .welcomeContent h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .stetoskop {
+    position: absolute;
+    top: -50px;  
+    right: -20px;
+    width: 400px; 
+    height: auto;
+    transform: rotate(5deg); 
+    z-index: 500;
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .statBox {
+    flex: 1;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.366);
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    flex-direction: column;
+    position :relative;
+  }
+  
+  .statValue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .statBox h3 {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+  }
+  
+
+  .statBox p {
+    color: black;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .upIcon {
+    position: absolute;
+    bottom: -70px; 
+    left: 80%;
+    transform: translateX(-50%);
+
+  }
+  
+  .appointmentsAndTasks {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .appointments, .tasks {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+  }
+  
+  .appointments h3, .tasks h3 {
+    margin-bottom: 1rem;
+    color: #1FA0BD;
+  }
+  
+  .appointmentHeader, .taskHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #93D1DF;
+    margin-bottom: 1rem;
+  }
+  
+  .headerWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .patientIcon, .taskIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+  }
+  
+  .appointmentItem, .taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .appointmentItem:last-child, .taskItem:last-child {
+    border-bottom: none;
+  }
+  
+  .taskName, .patientName {
+    font-weight: 500;
+  }
+  
+  .taskStatus, .appointmentTime {
+    font-weight: 600;
+    color: #1FA0BD;
+    background-color: rgba(31, 160, 189, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  .patientInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .patientImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+.dateWrapper{
+    display: flex;
+    flex-direction: row;
+}
+.patientInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .patientDetails {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  .patientName {
+    font-weight: 500;
+  }
+  
+  .visitReason {
+    font-size: 0.8em;
+    color: #666;
+  }
+
+
+
+/* 
+
+@media (max-width: 1024px) {
+  .mainContent {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .welcomeContent {
+    max-width: 100%;
+  }
+
+  .stetoskop {
+    width: 300px;
+    top: -30px;
+    right: -10px;
+  }
+
+  .appointmentsAndTasks {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentWrapper {
+    margin-top: 6rem;
+  }
+
+  .statsContainer {
+    flex-direction: column;
+  }
+
+  .statBox {
+    margin: 0.5rem 0;
+  }
+
+  .stetoskop {
+    width: 200px;
+    top: -20px;
+    right: -5px;
+  }
+
+  .appointmentItem, .taskItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .appointmentTime, .taskStatus {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcomeContent h1 {
+    font-size: 1.5rem;
+  }
+
+  .stetoskop {
+    width: 150px;
+  }
+
+  .appointments, .tasks {
+    padding: 1rem;
+  }
+} */
