@@ -7,10 +7,10 @@
     justify-content: space-between; 
     font-family: sans-serif; 
     box-shadow: 0 4px 10px #dad6d6;
-    /* position: fixed;
+    position: fixed;
     width: 100%;
     z-index: 1000;
-    top: 0; */
+    top: 0;
   }
   
   .navbarBrand{
@@ -51,8 +51,8 @@
   
   .supportButton {
     background-color: transparent;
-    border: 2px solid #e9967a; 
-    color: #e9967a;
+    border: 2px solid #e74c3c; 
+    color: #e74c3c;
     padding: 10px 20px;
     border-radius: 25px; 
     cursor: pointer;
