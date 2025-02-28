@@ -37,7 +37,7 @@ const LandingNavbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarBrand}>
-        <img src={logo} alt="Care Sync Logo" className={styles.logo} />
+        <img src={logo} alt="MediHub Logo" className={styles.logo} />
         <span className={styles.brandName}>MediHub</span>
       </div>
       <ul className={styles.navbarMenu}>
