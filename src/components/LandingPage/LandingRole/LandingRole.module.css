@@ -1,21 +1,20 @@
 .container {
     text-align: center;
     background-color: #E9F6F9;
-    padding: 80px 40px;
-    
+    padding: 120px 40px 40px 40px;
   }
   
   .heading {
     font-size: 3rem;
     font-weight: semibold;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: var(--primary-color);
   }
   
   .roles {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 100px;
   }
   
   .card {
@@ -24,12 +23,12 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px #dad6d6;
     text-align: center;
-    width: 350px;
+    width: 300px;
   }
   
   .image {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
   }
   
   .roleName {
