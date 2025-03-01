@@ -1,4 +1,3 @@
-/* General Container */
 .container {
     display: flex;
     width: 100vw;
@@ -15,7 +14,7 @@
     align-items: center;  
     
 }
-/* Left Side - Image */
+
 .leftSide {
     flex: 1;
     display: flex;
@@ -49,6 +48,7 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
+    color: #1FA0BD;
 }
 
 .backButton {
@@ -72,29 +72,29 @@
 }
 
 .brandName {
-    color: #20b2aa;
+    color: #1FA0BD;
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 25px;
 }
-/* Welcome Text */
+
 .welcomeText {
-    color: #333;
-    font-size: 1.2em;
+    color: #1C2A3A;
+    font-size: 2em;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .subText {
-    color: #666;
-    font-size: 0.9em;
+    color: #6B7280;
+    font-size: 1em;
     margin-bottom: 35px;
 }
 
-/* Input Fields */
 .inputGroup {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
 .inputField {
@@ -102,14 +102,14 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1em;
-    gap: 10px;
+    font-size: 0.9em;    
+    color: #9CA3AF;
+    background-color: #F9FAFB;
 }
 
-/* Create Account Button */
 .signInButton {
     width: 100%;
-    background-color: #20b2aa;
+    background-color: #1FA0BD;
     color: white;
     padding: 12px;
     border: none;
@@ -121,16 +121,15 @@
 }
 
 .signInButton:hover {
-    background-color: #20b2aa;
+    background-color: #1FA0BD;
 }
 
-/* Divider */
 .divider {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 25px 0;
-    color: #999;
+    color: #6B7280;
     font-size: 0.9em;
 }
 
@@ -141,14 +140,13 @@
     margin: 0 10px;
 }
 
-/* Links */
 .links {
     font-size: 0.9em;
-    color: #333;
+    color: #6B7280;
 }
 
 .signupLink {
-    color: #007BFF;
+    color: #1C64F2;
     text-decoration: none;
     font-weight: 600;
 }

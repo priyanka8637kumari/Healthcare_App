@@ -2,8 +2,10 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 150px 80px;
+    padding: 130px 80px;
     text-align: center;
+    height: 100vh;
+    /* margin-top: 80px; */
   }
   
   .title {

@@ -37,7 +37,7 @@ const LandingNavbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarBrand}>
-        <img src={logo} alt="Care Sync Logo" className={styles.logo} />
+        <img src={logo} alt="MediHub Logo" className={styles.logo} />
         <span className={styles.brandName}>MediHub</span>
       </div>
       <ul className={styles.navbarMenu}>
@@ -47,8 +47,8 @@ const LandingNavbar = () => {
         <li className={styles.navbarItem}>
           <a href="#about" className={activeSection === "about" ? styles.active : ""}>About Us</a>
         </li>
-        <li className={`${styles.navbarItem} ${activeSection === "services" ? styles.active : ""}`}>
-          <a href="#services">Our Features</a>
+        <li className={`${styles.navbarItem} ${activeSection === "features" ? styles.active : ""}`}>
+          <a href="#features">Our Features</a>
         </li>
       </ul>
       <button className={styles.supportButton}>

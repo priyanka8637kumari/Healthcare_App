@@ -50,6 +50,7 @@ body, html {
     border: none;
     font-size: 24px;
     cursor: pointer;
+    color: #1FA0BD;
 }
 
 .backButton {
@@ -73,21 +74,22 @@ body, html {
 }
 
 .brandName {
-    color: #20b2aa;
+    color: #1FA0BD;
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 25px;
 }
 
 .welcomeText {
-    color: #333;
-    font-size: 1.2em;
-    font-weight: 600;
+    color: #000000;
+    font-size: 2.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .subText {
-    color: #666;
-    font-size: 0.9em;
+    color: #6B7280;
+    font-size: 1.0em;
     margin-bottom: 35px;
 }
 
@@ -99,16 +101,18 @@ body, html {
 .inputField {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1.5px solid #ccc;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 0.9em;
     gap: 10px;
+    color: #9CA3AF;
+    background-color: #F9FAFB;
     
 }
 
 .signInButton {
     width: 100%;
-    background-color: #20b2aa; ;
+    background-color: #1FA0BD ;
     color: white;
     padding: 12px;
     border: none;
@@ -120,7 +124,7 @@ body, html {
 }
 
 .signInButton:hover {
-    background-color: #20b2aa; 
+    background-color: #1FA0BD; 
 }
 
 .divider {
@@ -141,15 +145,16 @@ body, html {
 
 .links {
     font-size: 0.9em;
-    color: #333;
+    color: #6B7280;
 }
 
 .links p {
     margin-top: 20px;
+    
 }
 
 .forgotLink, .signupLink {
-    color: #007BFF;
+    color: #1C64F2;
     text-decoration: none;
     font-weight: 600;
     
