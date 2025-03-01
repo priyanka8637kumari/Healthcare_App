@@ -1,0 +1,387 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 8rem;
+  }
+  
+  .mainContent {
+    flex: 1;
+    margin-left: 300px;
+    padding: 2rem;
+    background-color: #f0f9fb;
+  }
+  
+  .searchBar {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .searchBar input {
+    flex-grow: 1;
+    font-size: 1rem;
+    border:1px solid #9CA3AF;
+    
+  }
+  
+  .searchBar button {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+    .searchBar .createButton {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+  }
+  
+  .searchBar .shareButton {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 1rem;
+  }
+  
+  .searchBar button:hover {
+    opacity: 0.9;
+  }
+  .contentGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .patientList{
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+  }
+
+  .patientList{
+    flex: 0 0 30%; 
+  }
+
+  .rightSection{
+    flex:1;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #93D1DF;
+    margin-bottom: 1rem;
+  }
+  
+  .headerWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .patientIcon, .arrowIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+  }
+  
+  .dateWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .appointmentList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .appointmentItem {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+  }
+  .appointmentItem:hover {
+    background-color: #b6e5f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .appointmentItem:last-child {
+    border-bottom: none;
+  }
+  
+  .patientInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .patientImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .patientDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .patientName {
+    font-weight: 500;
+  }
+  
+  .visitReason {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .diagnosisHistory,.patientList{
+    h3 {
+        color:var(--primary-color);
+        margin-bottom: 1rem;
+        margin-left:0.5rem;
+    }
+  }
+  
+  .metrics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+     border-radius: 1rem;
+  }
+  
+  .metric {
+    flex: 1;
+    padding: 1rem;
+    background: linear-gradient(10deg, #1FA0BD 0%, #5FD8F3 100%);
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    text-align: center;
+  
+    h4 , p{
+        color:white;
+        margin-bottom: 0.5rem;
+      }
+    
+  }
+  
+
+
+  .metricSignWrapper{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    margin-top:1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .triangleIcon{
+    width: 15px;
+    height: 15px;
+    margin-right:0.3rem;
+  }
+
+  .triangleredIcon{
+    width:23px;
+    height:23px;
+
+  }
+  
+  .illnessDiagnosis {
+    background-color: rgba(31, 160, 189, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .illnessDiagnosis h4 {
+    color: #1FA0BD;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detailSection{
+    display: flex;
+    flex-direction: row;
+
+  }
+.profileSection{
+    background-color: white;
+    padding:1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+}
+.topProfileSection {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+  .profileNameWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+
+    h3 {
+        margin: 0; 
+      }
+
+      p {
+        margin: 0; 
+        font-size: 0.9em; 
+        color: #666;      
+      }
+  }
+  
+  
+  .profileIconWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: auto; }
+  
+
+  .bottomProfileSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 1rem; 
+
+    h5 {
+        margin-bottom: 0.5rem;
+        color: #666;
+      }
+      h4 {
+        margin-top: 0;
+      }
+  }
+  
+  .bottomProfileSection > div {
+    padding: 1rem;
+    border: 1px solid #ddd; 
+    border-radius: 0.5rem; 
+  }
+
+
+  
+  .detailSection {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .diagnosisWrapper, .document {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .diagnosisWrapper h3, .document h3 {
+    color: #1FA0BD;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .documentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .sectionSeparator {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 1rem 0;
+  }
+
+  .diagnosisWrapper{
+    border-bottom: 1px solid #e0e0e0;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        span{
+            color: #666;
+            margin-right: 10px;
+            display: inline-block;
+        }
+      }
+      img {
+
+        margin-right: 0.5rem;
+      }
+  }
+  
+
+  
+  .document ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .document li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+  
+  
+  }
+
+  
+  .document li:last-child {
+    border-bottom: none;
+  }
+
+  .documentIconWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .addButton {
+    background-color: #e0f7fa;
+    color: #1fa0bd;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #b2ebf2;
+  }
+  
