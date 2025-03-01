@@ -1,84 +1,58 @@
 .aboutUs {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 120px 80px;
-    text-align: center;
-    height: 100vh;
-    /* margin-top: 80px; */
-  }
-  
-  .title {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 60px;
-  }
-  
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 140px 40px;
+  text-align: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  /* margin-bottom: 20px; */
+}
+
+.imageContainer {
+  position: relative;
+  flex: 1;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.textContent {
+  flex: 1;
+  text-align:justify;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #7a7289;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
   .content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 80px;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .imageContainer {
-    position: relative;
-    flex: 1;
-    max-width: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* .playIcon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #0088cc;
-    font-size: 40px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    cursor: pointer;
-  } */
-  
+
   .textContent {
-    flex: 1;
-    text-align: left;
+    text-align: center;
   }
-  
-  .heading {
-    font-size: 2rem;
-    font-weight: bold;
-    /* color: #333; */
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  @media (max-width: 768px) {
-    .content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .textContent {
-      text-align: center;
-    }
-  }
-  
+}

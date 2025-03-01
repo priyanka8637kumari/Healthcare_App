@@ -9,12 +9,11 @@ const AboutUs = () => {
         <div className={styles.content}>
           <div className={styles.imageContainer}>
             <img src={aboutImage} alt="Doctor with a patient" className={styles.image} />
-            {/* <div className={styles.playIcon}>&#9654;</div>  */}
           </div>
           <div className={styles.textContent}>
-            <h3 className={styles.heading}>dummy text dummy text dummy text</h3>
+            
             <p className={styles.description}>
-              Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing. Various versions have evolved over the years, sometimes by accident, sometimes chunks as necessary making.
+            &quot;We are a team of healthcare and technology experts committed to transforming the medical industry through digital innovation. Our centralized medical system simplifies patient data management, enhances doctor-patient interactions, and improves healthcare accessibility for everyone.&quot;
             </p>
           </div>
         </div>
