@@ -7,7 +7,6 @@ import smartIcon from "../../../assets/landingPage/smartIcon.png";
 import labTest from "../../../assets/landingPage/labTest.png";
 import callIcon from "../../../assets/landingPage/callIcon.png";
 
-
 const FeaturesSection = () => {
   const features = [
     { image: fileSharing, title: "Secure cloud file sharing" },
@@ -20,16 +19,18 @@ const FeaturesSection = () => {
 
   return (
     <section className={styles.featuresSection} id="features">
-      <h2>Our Features</h2>
-      <div className={styles.featuresGrid}>
-        {features.map((feature, index) => (
-          <div className={styles.featureItem} key={index}>
-            <div className={styles.imageContainer}>
-              <img src={feature.image} alt={feature.title} />
+      <div className={styles.overlay}>
+        <h2>Our Features</h2>
+        <div className={styles.featuresGrid}>
+          {features.map((feature, index) => (
+            <div className={styles.featureItem} key={index}>
+              <div className={styles.imageContainer}>
+                <img src={feature.image} alt={feature.title} />
+              </div>
+              <p>{feature.title}</p>
             </div>
-            <p>{feature.title}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

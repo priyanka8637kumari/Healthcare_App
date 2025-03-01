@@ -15,39 +15,37 @@ const Footer = () => {
           <span className={styles.brandName}>MediHub</span>
         </div>
         <p className={styles.description}>
-          Nam posuere accumsan porta. Integer id tincidunt sit amet sed libero.
+          Transforming Healthcare with Smart Digital Solutions.
         </p>
-        <select className={styles.languageSelect}>
-          <option>English - En</option>
-          <option>Español - Es</option>
-          <option>Français - Fr</option>
-        </select>
-        <p className={styles.copyright}>© Skyrev Theme 2021</p>
+        <div className={styles.socialIcons}>
+          <img src={google} alt="google Icon" className={styles.icon} />
+          <img src={twitter} alt="twitter Icon" className={styles.icon} />
+          <img src={instagram} alt="instagram Icon" className={styles.icon} />
+          <img src={linkedin} alt="linkedin Icon" className={styles.icon} />
+        </div>
+        <p className={styles.copyright}>© 2025 Medihub. All rights reserved</p>
       </div>
 
       <div className={styles.center}>
-        <h3 className={styles.title}>FEATURES</h3>
+        <h3 className={styles.title}>QUICK LINKS</h3>
         <ul className={styles.list}>
-          <li>Cras convallis</li>
-          <li>Vestibulum faucibus</li>
-          <li>Quisque lacinia purus</li>
-          <li>Aliquam nec ex</li>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Features</li>
+          <li>How it works</li>
+          <li>Contact Us</li>
         </ul>
       </div>
 
       <div className={styles.right}>
-        <h3 className={styles.title}>RESOURCES</h3>
+        <h3 className={styles.title}>PRODUCT LINKS</h3>
         <ul className={styles.list}>
-          <li>Suspindisse porttitor</li>
-          <li>Nam posuere</li>
-          <li>Curabitur egestas</li>
+          <li>For Patients</li>
+          <li>For Doctors</li>
+          <li>For Lab technicians</li>
+          <li>Appointment Booking</li>
+          <li>Electronic Health Records</li>
         </ul>
-      </div>
-      <div className={styles.socialIcons}>
-        <img src={google} alt="google Icon" className={styles.icon} />
-        <img src={twitter} alt="twitter Icon" className={styles.icon} />
-        <img src={instagram} alt="instagram Icon" className={styles.icon} />
-        <img src={linkedin} alt="linkedin Icon" className={styles.icon} />
       </div>
     </footer>
   );

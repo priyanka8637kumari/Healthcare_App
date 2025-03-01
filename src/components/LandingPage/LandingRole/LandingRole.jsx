@@ -2,23 +2,24 @@ import React from "react";
 import styles from "./LandingRole.module.css";
 
 const roles = [
-    {
-      name: "Doctor",
-      image: "src/assets/landingPage/doctor.png", 
-    },
-    {
-      name: "Lab Technician",
-      image: "src/assets/landingPage/labTech.png", 
-    },
-    {
-      name: "Patient",
-      image: "src/assets/landingPage/patient.png", 
-    },
-  ];
+  {
+    name: "Doctor",
+    image: "src/assets/landingPage/doctor.png",
+  },
+  {
+    name: "Lab Technician",
+    image: "src/assets/landingPage/labTech.png",
+  },
+  {
+    name: "Patient",
+    image: "src/assets/landingPage/patient.png",
+  },
+];
 
-  const RoleSelection = () => {
-    return (
-      <section className={styles.container} id="landingRole">
+const RoleSelection = () => {
+  return (
+    <section className={styles.container} id="landingRole">
+      <div className={styles.overlay}>
         <h2 className={styles.heading}>Welcome! Choose your role</h2>
         <div className={styles.roles}>
           {roles.map((role, index) => (
@@ -29,8 +30,9 @@ const roles = [
             </div>
           ))}
         </div>
-      </section>
-    );
-  };
-  
-  export default RoleSelection;
+      </div>
+    </section>
+  );
+};
+
+export default RoleSelection;

@@ -1,15 +1,11 @@
-import React, {useState} from "react";
 import styles from "./LandingHero.module.css";
-import heroImage from "../../../assets/landingPage/heroImage.png";
 import bgVideo from "../../../assets/landingPage/backgroundvideo.mp4";
-import LandingRole from "../LandingRole/LandingRole";
 
 const HeroSection = () => {
- 
   const handleClick = () => {
-    const landingRoleSection = document.getElementById('landingRole');
+    const landingRoleSection = document.getElementById("landingRole");
     if (landingRoleSection) {
-      landingRoleSection.scrollIntoView({ behavior: 'smooth' });
+      landingRoleSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -26,9 +22,10 @@ const HeroSection = () => {
           specialists doctors. Qualified doctors, handled directly by general
           doctors and experienced specialists doctors.
         </p>
-        <button className={styles.heroButton} onClick={handleClick}>Confirm your role</button>
+        <button className={styles.heroButton} onClick={handleClick}>
+          Confirm your role
+        </button>
       </div>
-      
     </section>
   );
 };

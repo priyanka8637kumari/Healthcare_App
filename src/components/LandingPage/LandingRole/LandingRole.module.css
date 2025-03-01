@@ -1,7 +1,14 @@
 .container {
     text-align: center;
     background-color: #E9F6F9;
-    padding: 120px 40px 40px 40px;
+    padding-top: 140px;
+    padding-bottom: 60px;
+   
+  }
+
+  .overlay {
+   max-width: 1400px;
+   margin: 0 auto;
   }
   
   .heading {
@@ -15,6 +22,8 @@
     display: flex;
     justify-content: center;
     gap: 100px;
+  
+    padding: 0 40px;
   }
   
   .card {
@@ -23,7 +32,8 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px #dad6d6;
     text-align: center;
-    width: 300px;
+    width: 400px;
+    /* height: 650px; */
   }
   
   .image {

@@ -1,12 +1,12 @@
-import React from "react";
+import {useState, useEffect} from "react";
 import styles from "./LandingNavbar.module.css";
 import logo from "../../../assets/landingPage/logo.png";
 import phoneIcon from "../../../assets/landingPage/phone.png";
 
 const LandingNavbar = () => {
-  const [activeSection, setActiveSection] = React.useState("");
+  const [activeSection, setActiveSection] = useState("");
 
-  React.useEffect(() => {
+  useEffect(() => {
     const sections = document.querySelectorAll("section");
     const options = {
       root: null,
