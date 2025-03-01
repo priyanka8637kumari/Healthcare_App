@@ -62,7 +62,7 @@
     background: var(--primary-color);
     color: white;
     padding: 12px 14px;
-    border-radius: 10px;  
+    border-radius: 1rem;  
     cursor: pointer;
   }
   
@@ -71,7 +71,7 @@
     color: #e74c3c;
     padding: 12px 14px;
     border: 1px solid #e74c3c;
-    border-radius: 10px;
+    border-radius: 1rem;
     cursor: pointer;
     transition: 0.3s;
   }
