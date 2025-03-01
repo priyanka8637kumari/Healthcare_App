@@ -180,11 +180,8 @@
         color:white;
         margin-bottom: 0.5rem;
       }
-    
   }
   
-
-
   .metricSignWrapper{
     display: flex;
     flex-direction: row;
@@ -216,11 +213,6 @@
     margin-bottom: 0.5rem;
   }
   
-  .detailSection{
-    display: flex;
-    flex-direction: row;
-
-  }
 .profileSection{
     background-color: white;
     padding:1.5rem;
@@ -231,8 +223,6 @@
     display: flex;
     align-items: center;
   }
-  
-
   
   .profileNameWrapper {
     display: flex;
@@ -250,7 +240,7 @@
       }
   }
   
-  
+
   .profileIconWrapper {
     display: flex;
     flex-direction: row;
@@ -279,14 +269,12 @@
     border-radius: 0.5rem; 
   }
 
-
-  
   .detailSection {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
+   
   }
   
   .diagnosisWrapper, .document {
@@ -340,8 +328,6 @@
         margin-right: 0.5rem;
       }
   }
-  
-
   
   .document ul {
     list-style-type: none;
