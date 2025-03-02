@@ -1,0 +1,88 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 8rem; 
+  }
+  
+  .mainContent {
+    flex: 1;
+    margin-left: 300px; 
+    padding: 2rem;
+    background-color: #f0f9fb; 
+  }
+  
+/* .mainContent {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+  } */
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    color: #343a40; /* Dark gray */
+    font-size: 1.5rem;
+  }
+  
+  .tableContainer {
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+  }
+  
+  .appointmentTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .appointmentTable th,
+  .appointmentTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; /* Light border */
+  }
+  
+  .appointmentTable th {
+    background-color: #e9ecef; /* Lighter gray for header */
+    font-weight: 500;
+  }
+  
+  .appointmentCell {
+    vertical-align: top;
+  }
+  
+  .appointment {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .appointmentTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .appointment ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .appointment li {
+    font-size: 0.9rem;
+    color: #495057;
+  }
+  

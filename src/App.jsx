@@ -5,6 +5,7 @@ import LoginDoc from './pages/Login/LoginDoc';
 import LabTechDashboard from './pages/LabTechnician/LabTechDashboard';
 import SignupDoc from './pages/Signup/SignupDoc';
 import MedicalRecordsDoc from './pages/Doctor/MedicalRecordsDoc ';
+import ViewAppointments from './pages/Doctor/ViewAppointments';
 
 function App() {
   return (
