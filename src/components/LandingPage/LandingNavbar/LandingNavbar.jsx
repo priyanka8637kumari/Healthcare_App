@@ -48,7 +48,7 @@ const LandingNavbar = () => {
           <a href="#about" className={activeSection === "about" ? styles.active : ""}>About Us</a>
         </li>
         <li className={`${styles.navbarItem} ${activeSection === "features" ? styles.active : ""}`}>
-          <a href="#features">Our Features</a>
+        <a href="#features" className={activeSection === "features" ? styles.active : ""}>Our Features</a>
         </li>
       </ul>
       <button className={styles.supportButton}>
