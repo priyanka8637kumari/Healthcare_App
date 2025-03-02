@@ -3,7 +3,8 @@
     gap: 20px;
     align-items: center;
     justify-content: space-between;
-    padding: 150px 50px;
+    /* padding: 150px 50px; */
+    padding: 7rem;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
