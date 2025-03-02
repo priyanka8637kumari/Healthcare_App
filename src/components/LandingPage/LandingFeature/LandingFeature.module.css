@@ -1,6 +1,7 @@
 .featuresSection {
     background-color: #E9F6F9; 
-    padding: 140px 0 40px 0;
+    /* padding: 140px 0 40px 0; */
+    padding: 7rem;
     text-align: center;
     height: 100vh;
   }
@@ -13,7 +14,7 @@
   .featuresSection h2 {
     color: var(--primary-color); 
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   
   .featuresGrid {

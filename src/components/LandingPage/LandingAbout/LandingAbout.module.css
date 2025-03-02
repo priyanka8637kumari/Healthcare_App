@@ -2,7 +2,8 @@
 
   max-width: 1400px;
   margin: 0 auto;
-  padding: 140px 40px;
+  /* padding: 140px 40px; */
+  padding: 7rem;
   text-align: center;
   height: 100vh;
 }

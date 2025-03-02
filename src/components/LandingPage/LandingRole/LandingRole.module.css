@@ -1,9 +1,9 @@
 .container {
     text-align: center;
     background-color: #E9F6F9;
-    padding-top: 140px;
-    padding-bottom: 60px;
-   
+    /* padding-top: 140px;
+    padding-bottom: 60px; */
+   padding: 7rem;;
   }
 
   .overlay {
