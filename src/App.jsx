@@ -5,6 +5,7 @@ import LoginDoc from './pages/Login/LoginDoc';
 import LabTechDashboard from './pages/LabTechnician/LabTechDashboard';
 import SignupDoc from './pages/Signup/SignupDoc';
 import MedicalRecordsDoc from './pages/Doctor/MedicalRecordsDoc ';
+import PatientDashboard from './pages/Patient/PatientDashboard';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/doctor-dashboard" element={<DoctorDashboard />}> </Route>
         <Route path="/doctor-medicalrecords" element={<MedicalRecordsDoc />}> </Route>
         <Route path="/labtech-dashboard" element={<LabTechDashboard />}> </Route>
+        <Route path="/patient-dashboard" element={<PatientDashboard />} />
       </Routes>
     </Router>
   );
