@@ -1,9 +1,9 @@
 .container {
     text-align: center;
     background-color: #E9F6F9;
-    padding-top: 140px;
-    padding-bottom: 60px;
-   
+    /* padding-top: 140px;
+    padding-bottom: 60px; */
+    padding:7rem;
   }
 
   .overlay {
@@ -14,7 +14,7 @@
   .heading {
     font-size: 3rem;
     font-weight: semibold;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: var(--primary-color);
   }
   
@@ -22,8 +22,9 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-  
+    color:#7a7289;
     padding: 0 40px;
+    
   }
   
   .card {
@@ -44,7 +45,8 @@
   .roleName {
     font-size: 16px;
     /* font-weight: bold; */
-    margin: 10px 0;
+    /* margin: 10px 0; */
+    margin:1.5rem;
   }
   
   .loginButton {

@@ -30,18 +30,20 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    padding-left: 7rem;
   }
   
   .heroTitle {
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
   }
   
   .heroDescription {
     color: #DAD7D7;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 10px 0;
+    line-height: 1.8; 
   }
   
   .heroButton {
@@ -51,10 +53,11 @@
     color: var(--primary-color);
     border: none;
     padding: 10px 10px;
-    font-size: 1rem;
+    font-size: 1.2  rem;
     border-radius: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-weight: bold;
   }
   
   .heroButton:hover {
