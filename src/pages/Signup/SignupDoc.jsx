@@ -1,10 +1,17 @@
 import React from "react";
 import { FaHome, FaArrowLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import logo from "/src/assets/landingPage/logo.png"; 
 import doctorImage from "/src/assets/loginDoc/doc2.png";  // Use the same image or a different one
 import styles from "./SignupDoc.module.css"; // Import CSS Module
 
 const SignupDoc = () => {
+  const navigate = useNavigate(); // Hook for navigation
+
+    const handleCreateAccount = () => {
+        navigate("/edit-profile"); // Redirect to Edit Profile page
+    };
+
   return (
     <div className={styles.container}>
       {/* Left Side - Image (optional) */}
@@ -33,8 +40,9 @@ const SignupDoc = () => {
           </div>
 
           {/* Create Account Button */}
-          <button className={styles.signInButton}>Create Account</button>
-
+          <button className={styles.signInButton} onClick={handleCreateAccount}>
+                    Create Account
+                </button>
           {/* Divider */}
           <div className={styles.divider}>
             <hr />
