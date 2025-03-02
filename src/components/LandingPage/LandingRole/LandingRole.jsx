@@ -1,22 +1,31 @@
 import React from "react";
 import styles from "./LandingRole.module.css";
+import { useNavigate } from "react-router-dom";
 
 const roles = [
   {
     name: "Doctor",
     image: "src/assets/landingPage/doctor.png",
+    loginPath: "/login/doctor"
   },
   {
     name: "Lab Technician",
     image: "src/assets/landingPage/labTech.png",
+    loginPath: "src/pages/Login/LoginDoc.jsx"
   },
   {
     name: "Patient",
     image: "src/assets/landingPage/patient.png",
+    loginPath: "src/pages/Login/LoginDoc.jsx"
   },
 ];
 
 const RoleSelection = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = (path) => {
+    navigate(path);
+  };
   return (
     <section className={styles.container} id="landingRole">
       <div className={styles.overlay}>
@@ -26,7 +35,9 @@ const RoleSelection = () => {
             <div key={index} className={styles.card}>
               <img src={role.image} alt={role.name} className={styles.image} />
               <p className={styles.roleName}>{role.name}</p>
-              <button className={styles.loginButton}>LOGIN</button>
+              <button className={styles.loginButton}
+              onClick={() => handleLogin(role.loginPath)}
+              >LOGIN</button>
             </div>
           ))}
         </div>
