@@ -11,10 +11,12 @@ import patient3Image from "../../assets/minji/patient3.png"
 import patient4Image from "../../assets/minji/patient4.png"
 import upIcon1 from "../../assets/minji/upstatic.png"
 import upIcon2 from "../../assets/minji/upstatic2.png"
+import upIcon3 from "../../assets/minji/upIcon3.png"
 import blueArrow from "../../assets/minji/blue arrow.png"
 
 const DoctorDashboard = () => {
   return (
+    
     <div className={styles.dashboardContainer}>
       <HeaderDoctor />
       <div className={styles.contentWrapper}>
@@ -45,9 +47,9 @@ const DoctorDashboard = () => {
                   <img src={upIcon2}  className={styles.upIcon} />
                 </div>
                 <div className={styles.statBox}>
-                  
                   <p>Old Patients</p>
                   <h3>64</h3>
+                  <img src={upIcon3}  className={styles.upIcon} />
                 </div>
               </div>
             </div>

@@ -13,74 +13,66 @@ import logoutIcon from "../../../assets/minji/logouticon.png"
 import messageNumIcon from "../../../assets/minji/messagesnumicon.png"
 import logo from "../../../assets/landingPage/logo.png"
 
-
-
-
 const SideNavDoc = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.navbarBrand}>
-            <img src={logo} alt="Care Sync Logo" className={styles.logo} />
-            <span className={styles.brandName}>MediHub</span>
-          </div>
+        <img src={logo} alt="Care Sync Logo" className={styles.logo} />
+        <span className={styles.brandName}>MediHub</span>
+      </div>
       <ul className={styles.list}>
         <li className={`${styles.listItem} ${styles.dashboardMenu}`}>
           <div className={styles.itemWrapper}>
-            <img src={dashboardicon} alt="Dashboard Icon" />
+            <img src={dashboardicon} alt="Dashboard Icon" className={styles.menuIcons} />
             <span>Dashboard</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={patientsIcon} alt="Patients Icon" />
+            <img src={patientsIcon} alt="Patients Icon" className={styles.menuIcons} />
             <span>Patients</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={prescriptionIcon} alt="Prescription Icon" />
+            <img src={prescriptionIcon} alt="Prescription Icon" className={styles.menuIcons} />
             <span>Prescription</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={medicalrecordsIcon} alt="Medical Records Icon" />
+            <img src={medicalrecordsIcon} alt="Medical Records Icon" className={styles.menuIcons} />
             <span>Medical Records</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={appointmentIcon} alt="Appointments Icon" />
+            <img src={appointmentIcon} alt="Appointments Icon" className={styles.menuIcons} />
             <span>Appointments</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={labreportsIcon} alt="Lab Reports Icon" />
+            <img src={labreportsIcon} alt="Lab Reports Icon" className={styles.menuIcons} />
             <span>Lab Reports</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={messageIcon} alt="Messages Icon" />
+            <img src={messageIcon} alt="Messages Icon" className={styles.menuIcons} />
             <span>Messages</span>
-            <img src={messageNumIcon} alt="Messages Number Icon"  />
+            <img src={messageNumIcon} alt="Messages Number Icon" className={styles.messageNumIcon} />
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img 
-               src={settingIcon} 
-               alt="Settings Icon" 
-              style={{ width: '25px', height: '25px' }}
-               />
-            
+            <img src={settingIcon} alt="Settings Icon" className={styles.menuIcons} />
             <span>Settings</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={logoutIcon} alt="Logout Icon" />
+            <img src={logoutIcon} alt="Logout Icon" className={styles.menuIcons} />
             <span>LogOut</span>
           </div>
         </li>
