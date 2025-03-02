@@ -15,6 +15,7 @@ import blueArrow from "../../assets/minji/blue arrow.png"
 
 const DoctorDashboard = () => {
   return (
+    
     <div className={styles.dashboardContainer}>
       <HeaderDoctor />
       <div className={styles.contentWrapper}>
