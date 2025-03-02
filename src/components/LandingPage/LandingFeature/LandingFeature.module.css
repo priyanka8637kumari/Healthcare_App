@@ -1,58 +1,92 @@
 .featuresSection {
-    background-color: #E9F6F9; 
-    /* padding: 140px 0 40px 0; */
-    padding: 7rem;
-    text-align: center;
-    height: 100vh;
-  }
-  
-  .overlay {
-    max-width: 1400px;
-    margin: 0 auto;
-   }
+  background-color: var(--secondary-color);
+  padding: 8rem 7rem;
+  text-align: center;
+}
 
-  .featuresSection h2 {
-    color: var(--primary-color); 
-    font-size: 3rem;
-    margin-bottom: 40px;
-  }
-  
+.overlay {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.featuresSection h2 {
+  color: var(--primary-color);
+  font-size: var(--font-size-heading);
+  margin-bottom: 40px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  justify-items: center;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imageContainer {
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.featureItem p {
+  font-size: 1rem;
+}
+
+/* ......Responsive Styling....... */
+
+@media (max-width: 768px) {
   .featuresGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 60px;
-    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .featureItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    /* max-width: 200px;  */
-  }
-  
-  .imageContainer {
-    /* background-color: #e9ecef;  */
-    border-radius: 15px;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  .imageContainer img {
-    max-width: 350px;
-    max-height: 350px;
 
+  .featuresSection {
+    padding: 8rem 2rem;
   }
-  
-  .featureItem p {
-    /* color: #333; */
-    font-size: 1rem;
+
+  .imageContainer img {
+    max-width: 250px;
+    max-height: 250px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .featuresGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featuresSection {
+    padding: 8rem 2rem;
+  }
+
+  .imageContainer img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .featuresSection {
+    padding: 8rem 1rem;
+  }
+
+  .imageContainer img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
