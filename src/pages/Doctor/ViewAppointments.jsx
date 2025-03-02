@@ -1,93 +1,153 @@
-import React from 'react';
+import React from 'react'
 import styles from './ViewAppointments.module.css';
 import HeaderDoctor from '../../components/Doctor/HeaderDoctor/HeaderDoctor';
 import SideNavDoc from '../../components/Doctor/SideNavDoctor/SideNavDoc';
-
-
+{/* <Route path="/doctor-viewappointments" element={<ViewAppointments />}> </Route> */}
 const ViewAppointments = () => {
-
-  const appointments = {
-    "Feb 10 2025": [
-      { time: "08AM-10AM", title: "Labor Ward Duty", details: ["Monitor Active Labor Cases", "Assist in Normal & C-Section Deliveries", "Manage Emergency Cases"] },
-      { time: "12PM-01PM", title: "Mrs. Ebba Joseph", details: ["Uterine Fibroid Surgery", "Hysterectomy (removal of uterus)"] },
-      { time: "03PM-04PM", title: "In - Patient rounds", details: ["New Admissions to Assess", "Post-Surgical Patients to Monitor"] }
-    ],
-    "Feb 11 2025": [
-      { time: "09AM-11AM", title: "Documentation", details: ["Verify Patient Information", "Post-Surgical Reports", "Discharge Summaries", "Ensure Reports Are Signed & Approved", "Update Recent Lab Report"] },
-      { time: "03PM-04PM", title: "Out - Patient consulting", details: ["New Patient Consultation", "Follow-up Visit", "Post-Surgical Review", "Second Opinion Consultation"] }
-    ],
-    "Feb 12 2025": [
-      { time: "08AM-09AM", title: "Mrs.Maja Alvin", details: ["Fallopian Tube Surgery", "Removal of one fallopian tubes"] },
-      { time: "10AM-12PM", title: "Ms.Elsa", details: ["Cervical Cerclage Surgery", "Stitching the cervix to prevent miscarriage"] },
-      { time: "02PM-04PM", title: "In - Patient rounds", details: ["New Admissions to Assess", "Post-Surgical Patients to Monitor", "High-Risk Cases (e.g., ICU, post-op complications, infections)"] }
-    ],
-    "Feb 13 2025": [
-      { time: "10AM-01PM", title: "Medical conference", details: ["Location: (Grand Medical Convention Center, Stockholm)", "Panel Discussions \"Managing High-Risk Pregnancies\"", "Update Medical Knowledge & Notes", "Follow up on New Contacts & Collaborations"] }
-    ]
-  };
-
-  const days = Object.keys(appointments);
-
-  const timeSlots = [
-    "08 AM", "09 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "03 PM", "04 PM"
-  ];
   return (
     <div className={styles.dashboardContainer}>
-      <HeaderDoctor />
-      <div className={styles.contentWrapper}>
-        <SideNavDoc />
-        <div className={styles.mainContent}>
-        <div className={styles.header}>
-        <h2>View Appointment</h2>
-        <div className={styles.dateRange}>Feb 10 - Feb13</div>
-        <div className={styles.icons}> {/*  Add Icons here */}</div>
+    <HeaderDoctor />
+    <div className={styles.contentWrapper}>
+      <SideNavDoc />
+      <div className={styles.mainContent}>
+     
+      <div className={styles.header}>
+        <div className={styles.title}>View Appointment</div>
+        {/* <div className={styles.dateRange}>Feb 10 - Feb13</div> */}
+        <div className={styles.actions}>
+          <select className={styles.dateSelect}>
+            <option>Feb 10 - Feb13</option>
+          </select>
+          <button className={styles.iconButton}> {/* Icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list-ul" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+          <button className={styles.iconButton}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-gear" viewBox="0 0 16 16">
+              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+              <path d="m9.757 1.546 4.243.613-1.01.663-3.4-1.002.603-4.238zM2.04 4.243 1.427 8.485l.663 1.01 4.238-.603-1.002-3.4zm9.718 9.718-4.243-.613 1.01-.663 3.4 1.002-.603 4.238zM4.243 2.04 8.485 1.427l1.01.663-.603 4.238-3.4-1.002z"/>
+              <path d="M6 4.375a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-.5-.5z"/>
+            </svg>
+          </button>
+        </div>
       </div>
-      <div className={styles.tableContainer}>
-        <table className={styles.appointmentTable}>
-          <thead>
-            <tr>
-              <th>Time</th>
-              {days.map(day => (
-                <th key={day}>{day}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {timeSlots.map(time => (
-              <tr key={time}>
-                <td>{time}</td>
-                {days.map(day => {
-                  // Find appointments for this day that intersect with this time slot
-                  const appointmentForTime = appointments[day].find(appt => {
-                    const [startHour, endHour] = appt.time.split('-').map(t => parseInt(t));
-                    const timeHour = parseInt(time);
-                    return timeHour >= startHour && timeHour < endHour;
-                  });
 
-                  return (
-                    <td key={`${day}-${time}`} className={styles.appointmentCell}>
-                      {appointmentForTime && (
-                        <div className={styles.appointment}>
-                          <div className={styles.appointmentTitle}>{appointmentForTime.title}</div>
-                          <ul>
-                            {appointmentForTime.details.map((detail, index) => (
-                              <li key={index}>{detail}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                    </td>
-                  );
-                })}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      {/* Table */}
+      <div className={styles.table}>
+        {/* Time Column */}
+        <div className={styles.timeColumn}>
+          <div className={styles.timeSlot}>08 AM</div>
+          <div className={styles.timeSlot}>09 AM</div>
+          <div className={styles.timeSlot}>10 AM</div>
+          <div className={styles.timeSlot}>11 AM</div>
+          <div className={styles.timeSlot}>12 PM</div>
+          <div className={styles.timeSlot}>01 PM</div>
+          <div className={styles.timeSlot}>02 PM</div>
+          <div className={styles.timeSlot}>03 PM</div>
+          <div className={styles.timeSlot}>04 PM</div>
+        </div>
+
+        {/* Day Columns */}
+        <div className={styles.dayColumn}>
+          <div className={styles.dayHeader}>Feb 10 2025</div>
+          <div className={`${styles.appointment} ${styles.blueAppointment}`}>
+            <div className={styles.appointmentTitle}>Labor Ward Duty</div>
+            <div className={styles.appointmentTime}>08AM - 10AM</div>
+            <ul>
+              <li>Monitor Active Labor Cases</li>
+              <li>Assist in Normal & C-Section Deliveries</li>
+              <li>Manage Emergency Cases</li>
+            </ul>
+          </div>
+          <div className={`${styles.appointment} ${styles.yellowAppointment} ${styles.at12}`}>
+            <div className={styles.appointmentTitle}>Mrs. Ebba Joseph</div>
+            <div className={styles.appointmentTime}>12PM - 01PM</div>
+            <ul>
+              <li>Uterine Fibroid Surgery</li>
+              <li>Hysterectomy (removal of uterus)</li>
+            </ul>
+          </div>
+          <div className={`${styles.appointment} ${styles.blueAppointment} ${styles.at03}`}>
+            <div className={styles.appointmentTitle}>In - Patient rounds</div>
+            <div className={styles.appointmentTime}>03PM - 04PM</div>
+            <ul>
+              <li>New Admissions to Assess</li>
+              <li>Post-Surgical Patients to Monitor</li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.dayColumn}>
+          <div className={styles.dayHeader}>Feb 11 2025</div>
+          <div className={`${styles.appointment} ${styles.at09}`}>
+            <div className={styles.appointmentTitle}>Documentation</div>
+            <div className={styles.appointmentTime}>09AM - 11AM</div>
+            <ul>
+              <li>Verify Patient Information</li>
+              <li>Post-Surgical Reports</li>
+              <li>Discharge Summaries</li>
+              <li>Ensure Reports Are Signed & Approved</li>
+              <li>Update Recent Lab Report</li>
+            </ul>
+          </div>
+          <div className={`${styles.appointment} ${styles.yellowAppointment} ${styles.at03}`}>
+            <div className={styles.appointmentTitle}>Out - Patient consulting</div>
+            <div className={styles.appointmentTime}>03PM - 04PM</div>
+            <ul>
+              <li>New Patient Consultation</li>
+              <li>Follow-up Visit</li>
+              <li>Post-Surgical Review</li>
+              <li>Second Opinion Consultation</li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.dayColumn}>
+          <div className={styles.dayHeader}>Feb 12 2025</div>
+          <div className={`${styles.appointment} ${styles.at08}`}>
+            <div className={styles.appointmentTitle}>Mrs.Maja Alvin</div>
+            <div className={styles.appointmentTime}>08AM - 09AM</div>
+            <ul>
+              <li>Fallopian Tube Surgery</li>
+              <li>Removal of one fallopian tubes</li>
+            </ul>
+          </div>
+          <div className={`${styles.appointment} ${styles.orangeAppointment} ${styles.at10}`}>
+            <div className={styles.appointmentTitle}>Ms.Elsa</div>
+            <div className={styles.appointmentTime}>10AM - 12PM</div>
+            <ul>
+              <li>Cervical Cerclage Surgery</li>
+              <li>Stitching the cervix to prevent miscarriage</li>
+            </ul>
+          </div>
+          <div className={`${styles.appointment} ${styles.blueAppointment} ${styles.at02}`}>
+            <div className={styles.appointmentTitle}>In - Patient rounds</div>
+            <div className={styles.appointmentTime}>02PM - 04PM</div>
+            <ul>
+              <li>New Admissions to Assess</li>
+              <li>Post-Surgical Patients to Monitor</li>
+              <li>High-Risk Cases (e.g., ICU, post-op complications, infections)</li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.dayColumn}>
+          <div className={styles.dayHeader}>Feb 13 2025</div>
+          <div className={`${styles.appointment} ${styles.at10}`}>
+            <div className={styles.appointmentTitle}>Medical conference</div>
+            <div className={styles.appointmentTime}>10AM - 01PM</div>
+            <ul>
+              <li>Location: (Grand Medical Convention Center, Stockholm)</li>
+              <li>Panel Discussions &quot;Managing High-Risk Pregnancies&quot;</li>
+              <li>Update Medical Knowledge & Notes</li>
+              <li>Follow up on New Contacts & Collaborations</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+      </div>
+    </div>
+  
   )
 }
 
-export default ViewAppointments
+export default ViewAppointments;

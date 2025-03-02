@@ -8,6 +8,8 @@ import labTest from "../../../assets/landingPage/labTest.png";
 import callIcon from "../../../assets/landingPage/callIcon.png";
 
 const FeaturesSection = () => {
+
+  // .....Features data.....
   const features = [
     { image: fileSharing, title: "Secure cloud file sharing" },
     { image: aiInterpreter, title: "AI powered interpreter" },

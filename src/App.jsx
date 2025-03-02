@@ -10,6 +10,7 @@ import PatientDashboard from './pages/Patient/PatientDashboard';
 
 
 
+
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/edit-profile" element={<EditProfileDoc />} />
         <Route path="/doctor-dashboard" element={<DoctorDashboard />}> </Route>
         <Route path="/doctor-medicalrecords" element={<MedicalRecordsDoc />}> </Route>
+        <Route path="/doctor-viewappointments" element={<ViewAppointments />}> </Route>
         <Route path="/labtech-dashboard" element={<LabTechDashboard />}> </Route>
         <Route path="/patient-dashboard" element={<PatientDashboard />} />
       </Routes>
