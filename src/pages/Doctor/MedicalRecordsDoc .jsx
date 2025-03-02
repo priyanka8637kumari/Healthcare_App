@@ -38,11 +38,11 @@ const MedicalRecordsDoc = () => {
             {/* Search Bar */}
             <div className={styles.searchBar}>
       
-                        <input 
-                          type="text" 
-                          placeholder="Search patients, records, appointments..." 
-                          className={styles.searchBar} 
-                        />
+           <input 
+            type="text" 
+             placeholder="Search patients, records, appointments..." 
+             className={styles.searchBar} 
+            />
               <button className={styles.createButton}>
               <img src={createNewRecordIcon} className={styles.searchbarIcon} alt="Patient" />
               Create new record</button>
