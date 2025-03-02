@@ -5,13 +5,14 @@
   /* padding: 140px 40px; */
   padding: 7rem;
   text-align: center;
-  height: 100vh;
+  /* height: 100vh; */
+  padding:7rem;
 }
 
 .title {
   font-size: 3rem;
   color: var(--primary-color);
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .content {
@@ -27,7 +28,6 @@
   position: relative;
   flex: 1;
   max-width: 600px;
-  border-radius: 10px;
   overflow: hidden;
 }
 

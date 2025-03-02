@@ -3,7 +3,8 @@
     /* padding: 140px 0 40px 0; */
     padding: 7rem;
     text-align: center;
-    height: 100vh;
+    /* height: 100vh; */
+    padding:7rem;
   }
   
   .overlay {
@@ -54,5 +55,6 @@
   .featureItem p {
     /* color: #333; */
     font-size: 1rem;
+    color: #7a7289;
   }
   
