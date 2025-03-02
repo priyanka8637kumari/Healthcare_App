@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './PatientDashboard.module.css'
-import headIcon from "@/assets/patient/laptop/headicon.png";
-import translateIcon from "@/assets/patient/laptop/translate.png"
-import arrowIcon from "@/assets/patient/laptop/arrow.png"
+import headIcon from "@/assets/patient/headicon.png";
+import translateIcon from "@/assets/patient/translate.png"
+import arrowIcon from "@/assets/patient/arrow.png"
 
 const PatientDashboard = () => {
   return (
