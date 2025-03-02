@@ -2,9 +2,10 @@
 
   max-width: 1400px;
   margin: 0 auto;
-  padding: 140px 40px;
+  /* padding: 140px 40px; */
   text-align: center;
-  height: 100vh;
+  /* height: 100vh; */
+  padding:7rem;
 }
 
 .title {

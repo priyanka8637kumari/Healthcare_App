@@ -4,7 +4,7 @@ import aboutImage from "../../../assets/landingPage/aboutImage.png";
 
 const AboutUs = () => {
     return (
-      <section className={styles.aboutUs} id="about">
+      <section className={styles.aboutUs}  id="about">
         <h2 className={styles.title}>About Us</h2>
         <div className={styles.content}>
           <div className={styles.imageContainer}>
