@@ -2,7 +2,9 @@ import React from 'react'
 import styles from './ViewAppointments.module.css';
 import HeaderDoctor from '../../components/Doctor/HeaderDoctor/HeaderDoctor';
 import SideNavDoc from '../../components/Doctor/SideNavDoctor/SideNavDoc';
-{/* <Route path="/doctor-viewappointments" element={<ViewAppointments />}> </Route> */}
+import arrowIcon from "../../assets/minji/arrowicon.png"
+import blueArrow from "../../assets/minji/blue arrow.png"
+
 const ViewAppointments = () => {
   return (
     <div className={styles.dashboardContainer}>
@@ -13,11 +15,15 @@ const ViewAppointments = () => {
      
       <div className={styles.header}>
         <div className={styles.title}>View Appointment</div>
-        {/* <div className={styles.dateRange}>Feb 10 - Feb13</div> */}
+        
         <div className={styles.actions}>
-          <select className={styles.dateSelect}>
+          {/* <select className={styles.dateSelect}>
             <option>Feb 10 - Feb13</option>
-          </select>
+          </select> */}
+          <div className={styles.dateSelect}>
+            <span>Feb 10 - Feb13</span>
+            <img src={blueArrow} alt="arrow" />
+          </div>
           <button className={styles.iconButton}> {/* Icon */}
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list-ul" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
@@ -37,6 +43,7 @@ const ViewAppointments = () => {
       <div className={styles.table}>
         {/* Time Column */}
         <div className={styles.timeColumn}>
+        <div className={styles.timeSlot}>Time</div>
           <div className={styles.timeSlot}>08 AM</div>
           <div className={styles.timeSlot}>09 AM</div>
           <div className={styles.timeSlot}>10 AM</div>
@@ -49,9 +56,9 @@ const ViewAppointments = () => {
         </div>
 
         {/* Day Columns */}
-        <div className={styles.dayColumn}>
+        <div className={`${styles.dayColumn} ${styles.dayColumn1}`}>
           <div className={styles.dayHeader}>Feb 10 2025</div>
-          <div className={`${styles.appointment} ${styles.blueAppointment}`}>
+          <div className={`${styles.appointment} ${styles.greenAppointment}`}>
             <div className={styles.appointmentTitle}>Labor Ward Duty</div>
             <div className={styles.appointmentTime}>08AM - 10AM</div>
             <ul>
@@ -60,7 +67,7 @@ const ViewAppointments = () => {
               <li>Manage Emergency Cases</li>
             </ul>
           </div>
-          <div className={`${styles.appointment} ${styles.yellowAppointment} ${styles.at12}`}>
+          <div className={`${styles.appointment} ${styles.greenAppointment} ${styles.at12}`}>
             <div className={styles.appointmentTitle}>Mrs. Ebba Joseph</div>
             <div className={styles.appointmentTime}>12PM - 01PM</div>
             <ul>
@@ -68,7 +75,7 @@ const ViewAppointments = () => {
               <li>Hysterectomy (removal of uterus)</li>
             </ul>
           </div>
-          <div className={`${styles.appointment} ${styles.blueAppointment} ${styles.at03}`}>
+          <div className={`${styles.appointment} ${styles.greenAppointment} ${styles.at03}`}>
             <div className={styles.appointmentTitle}>In - Patient rounds</div>
             <div className={styles.appointmentTime}>03PM - 04PM</div>
             <ul>
@@ -79,7 +86,7 @@ const ViewAppointments = () => {
         </div>
         <div className={styles.dayColumn}>
           <div className={styles.dayHeader}>Feb 11 2025</div>
-          <div className={`${styles.appointment} ${styles.at09}`}>
+          <div className={`${styles.appointment} ${styles.redAppointment} ${styles.at09}`}>
             <div className={styles.appointmentTitle}>Documentation</div>
             <div className={styles.appointmentTime}>09AM - 11AM</div>
             <ul>
@@ -90,7 +97,7 @@ const ViewAppointments = () => {
               <li>Update Recent Lab Report</li>
             </ul>
           </div>
-          <div className={`${styles.appointment} ${styles.yellowAppointment} ${styles.at03}`}>
+          <div className={`${styles.appointment} ${styles.redAppointment} ${styles.at03}`}>
             <div className={styles.appointmentTitle}>Out - Patient consulting</div>
             <div className={styles.appointmentTime}>03PM - 04PM</div>
             <ul>
@@ -103,7 +110,7 @@ const ViewAppointments = () => {
         </div>
         <div className={styles.dayColumn}>
           <div className={styles.dayHeader}>Feb 12 2025</div>
-          <div className={`${styles.appointment} ${styles.at08}`}>
+          <div className={`${styles.appointment} ${styles.yellowAppointment} ${styles.at08}`}>
             <div className={styles.appointmentTitle}>Mrs.Maja Alvin</div>
             <div className={styles.appointmentTime}>08AM - 09AM</div>
             <ul>
@@ -111,7 +118,7 @@ const ViewAppointments = () => {
               <li>Removal of one fallopian tubes</li>
             </ul>
           </div>
-          <div className={`${styles.appointment} ${styles.orangeAppointment} ${styles.at10}`}>
+          <div className={`${styles.appointment} ${styles.yellowAppointment} ${styles.at10}`}>
             <div className={styles.appointmentTitle}>Ms.Elsa</div>
             <div className={styles.appointmentTime}>10AM - 12PM</div>
             <ul>
@@ -119,7 +126,7 @@ const ViewAppointments = () => {
               <li>Stitching the cervix to prevent miscarriage</li>
             </ul>
           </div>
-          <div className={`${styles.appointment} ${styles.blueAppointment} ${styles.at02}`}>
+          <div className={`${styles.appointment} ${styles.yellowAppointment} ${styles.at02}`}>
             <div className={styles.appointmentTitle}>In - Patient rounds</div>
             <div className={styles.appointmentTime}>02PM - 04PM</div>
             <ul>
@@ -131,7 +138,7 @@ const ViewAppointments = () => {
         </div>
         <div className={styles.dayColumn}>
           <div className={styles.dayHeader}>Feb 13 2025</div>
-          <div className={`${styles.appointment} ${styles.at10}`}>
+          <div className={`${styles.appointment} ${styles.blueAppointment} ${styles.at11}`}>
             <div className={styles.appointmentTitle}>Medical conference</div>
             <div className={styles.appointmentTime}>10AM - 01PM</div>
             <ul>
