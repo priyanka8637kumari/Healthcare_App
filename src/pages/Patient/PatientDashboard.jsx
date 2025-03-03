@@ -10,6 +10,17 @@ import quickHelp from "../../assets/patient/Quick help.png"
 import hospital from "../../assets/patient/Hospital.png"
 import ambulance from "../../assets/patient/Ambulance.png"
 import doctor from "../../assets/patient/Doctors.png"
+import ambulanceCar from "../../assets/patient/ambulance-car.png"
+import heartBeat from "../../assets/patient/heartbeat.png"
+import Hemoglobin from "../../assets/patient/Hemoglobin.png"
+import bloodPressure from "../../assets/patient/Blood Pressure.png"
+import sugarLevel from "../../assets/patient/Sugar Levels.png"
+import examOne from "../../assets/patient/exam1.png"
+import examTwo from "../../assets/patient/exam2.png"
+import examThree from "../../assets/patient/exam3.png"
+import examFour from "../../assets/patient/exam4.png"
+import examFive from "../../assets/patient/exam5.png"
+import examSix from "../../assets/patient/exam6.png"
 
 const PatientDashboard = () => {
   return (
@@ -99,7 +110,30 @@ const PatientDashboard = () => {
       </div>
 
       <div className={styles.patinetMainPage}>
-        <div></div>
+        <div className={styles.emergencyCall}>
+          <p>Emergency Call</p>
+          <img src={ambulanceCar} alt="ambulance car" />
+        </div>
+        <div className={styles.patientHealth}>
+          <img src={heartBeat} alt="heart beat" />
+          <img src={bloodPressure} alt="blood pressure" />
+          <img src={Hemoglobin} alt="Hemoglobin" />
+          <img src={sugarLevel} alt="Sugar level" />
+        </div>
+        <div className={styles.diagnose}>
+          <div className={styles.diagnoseTitle}>
+            <h5>diagnose</h5>
+            <p>Date</p>
+          </div>
+          <div className={styles.exams}>
+            <img src={examOne} alt="" />
+            <img src={examTwo} alt="" />
+            <img src={examThree} alt="" />
+            <img src={examFour} alt="" />
+            <img src={examFive} alt="" />
+            <img src={examSix} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   )
