@@ -31,14 +31,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 0 10px;
+    margin-bottom: 10px;
     /* background-color: #fff; */
     border-radius: 5px;
+   
   }
   
   .title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--primary-color);
   }
@@ -53,15 +54,18 @@
     display: flex;
     gap: 40px;
     align-items: center;
+
   }
   
   .dateSelect {
+    display: flex;
     background-color: #93D1DF;
-    padding: 8px;
+    padding: 6px 10px;
     border: 1px solid #ccc;
     border-radius: 25px;
     margin-right: 10px;
     color: var(--primary-color);
+    font-size: 1rem;
   }
   
   .iconButton {
@@ -82,13 +86,19 @@
     display: flex;
     width: 100%;
     overflow-x: auto;
+   border: 2px solid #F0F0F0;
   }
   
   .timeColumn {
     flex-shrink: 0;
     width: 80px;
     padding: 10px;
+    font-weight: medium;
+    color: #000000;
+    font-size: 0.85rem;
+   
   }
+
   
   .timeSlot {
     padding: 10px;
@@ -107,9 +117,9 @@
   .dayHeader {
     padding: 10px;
     text-align: center;
-    font-weight: bold;
-    color: #555;
-    background-color: #f0f0f0;
+    
+    color: #000000;
+  font-size: 0.85rem;
     border-bottom: 1px solid #eee;
   }
   
@@ -118,21 +128,25 @@
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 0.9rem;
-    color: #444;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 10px #dad6d6;
+    font-size: 0.85rem;
+    color: var(--primary-color);
     position: relative;
   }
   
   .appointmentTitle {
-    font-weight: bold;
+  
     margin-bottom: 5px;
+    color: #000000;
+    text-align: center;
   }
   
   .appointmentTime {
-    font-size: 0.8rem;
-    color: #777;
+    font-size: 0.85rem;
+    color: #9CA3AF;
     margin-bottom: 5px;
+    text-align: center;
   }
   
   .appointment ul {
@@ -140,40 +154,41 @@
   }
   
   /* Appointment Color Styles */
-  .blueAppointment {
-    background-color: #e6f0ff;
-    border-left: 5px solid #337ab7;
+  .greenAppointment {
+    border-left: 5px solid #3BA285;
+  }
+
+  .redAppointment {
+    border-left: 5px solid #DB3756;
   }
   
   .yellowAppointment {
-    background-color: #fff8e1;
-    border-left: 5px solid #ffc107;
+    border-left: 5px solid #DB9B10;
   }
   
-  .orangeAppointment {
-    background-color: #ffe0b2;
-    border-left: 5px solid #ff9800;
+  .blueAppointment {
+     border-left: 5px solid #1D3EAF;
   }
   
   /* Appointment Position Styles */
-  .at08 {
+  /* .at08 {
     margin-top: 0;
-  }
+  } */
   
   .at09 {
-    margin-top: 79px;
+    margin-top: 70px;
   }
   
   .at10 {
-    margin-top: 158px;
+    margin-top: 70px;
   }
   
   .at11 {
-    margin-top: 237px;
+    margin-top: 140px;
   }
   
   .at12 {
-    margin-top: 316px;
+    margin-top: 70px;
   }
   
   .at01 {
@@ -181,11 +196,11 @@
   }
   
   .at02 {
-    margin-top: 474px;
+    margin-top: 70px;
   }
   
   .at03 {
-    margin-top: 553px;
+    margin-top: 70px;
   }
   
   .at04 {
