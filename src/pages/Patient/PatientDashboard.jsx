@@ -1,5 +1,8 @@
 import React from 'react'
 import styles from './PatientDashboard.module.css'
+import arrowIcon from "../../assets/patient/arrow.png";
+import headIcon from "../../assets/patient/headicon.png"
+import translateIcon from "../../assets/patient/translate.png"
 
 const PatientDashboard = () => {
   return (
@@ -8,7 +11,8 @@ const PatientDashboard = () => {
         {/* Side header Info */}
         <section className={styles.patientSidebarHeaderInfo}>
           <div className={styles.patientImage}>
-            <img src="" alt="" />
+            <img src={arrowIcon} alt="" /> 
+            {/* test! remove */}
           </div>
           <div className={styles.patientName}>
             <h1>Asher Wang</h1>
@@ -97,7 +101,6 @@ const PatientDashboard = () => {
           Make a new appointment
         </button> 
       </div>
-
 
       <div className={styles.patinetMainPage}>
         <div></div>
