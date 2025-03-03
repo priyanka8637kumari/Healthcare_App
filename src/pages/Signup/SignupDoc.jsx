@@ -7,9 +7,9 @@ import styles from "./SignupDoc.module.css";
 
 const SignupDoc = () => {
   const navigate = useNavigate(); 
-    const handleCreateAccount = () => {
-        navigate("/edit-profile"); 
-    };
+  const handleCreateAccount = () => {
+      navigate("/edit-profile"); 
+  };
 
   return (
     <div className={styles.container}>      
@@ -18,29 +18,30 @@ const SignupDoc = () => {
       </div>
       
       <div className={styles.rightSide}>       
-        <button className={styles.backButton}><FaArrowLeft /></button>
-        <button className={styles.homeButton}><FaHome /></button>        
+        <FaArrowLeft className={styles.backIcon} onClick={() => navigate(-1)} />
+        <FaHome className={styles.homeIcon} onClick={() => navigate("/")} />       
+
         <div className={styles.loginBox}>
           <img src={logo} alt="Care Sync Logo" className={styles.logo} />          
           <h1 className={styles.brandName}>MediHub</h1>
           <p className={styles.welcomeText}>Create Account</p>
-          <p className={styles.subText}>We are here to help you!</p>    
+          <p className={styles.subText}>We are here to help you!</p>         
 
           <div className={styles.inputGroup}>
             <input type="text" placeholder="Your Name" className={styles.inputField} />
             <input type="email" placeholder="Your Email" className={styles.inputField} />
             <input type="password" placeholder="Password" className={styles.inputField} />
-          </div> 
-
-          <button className={styles.signInButton} onClick={handleCreateAccount}>
-                    Create Account
-                </button>
+          </div>
           
+          <button className={styles.signInButton} onClick={handleCreateAccount}>
+            Create Account
+          </button>          
           <div className={styles.divider}>
             <hr />
             <span>or</span>
             <hr />
-          </div>          
+          </div>         
+
           <div className={styles.links}>
             <p>
               Do you have an account? <a href="/login" className={styles.signupLink}>Sign In</a>
