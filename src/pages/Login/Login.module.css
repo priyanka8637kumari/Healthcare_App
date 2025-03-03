@@ -43,7 +43,7 @@ body, html {
     padding: 30px; 
 }
 
-.homeButton, .backButton {
+.homeIcon, .backIcon {
     position: absolute;
     top: 20px;
     background: none;
@@ -53,11 +53,11 @@ body, html {
     color: #1FA0BD;
 }
 
-.backButton {
+.backIcon {
     left: 20px;
 }
 
-.homeButton {
+.homeIcon {
     right: 20px;
 }
 

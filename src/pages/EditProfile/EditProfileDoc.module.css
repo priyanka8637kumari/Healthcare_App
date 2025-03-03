@@ -43,7 +43,7 @@ body, html {
     padding: 30px; 
 }
 
-.homeButton, .backButton {
+.homeIcon, .backIcon {
     position: absolute;
     top: 20px;
     background: none;
@@ -53,11 +53,11 @@ body, html {
     color: #1FA0BD;
 }
 
-.backButton {
+.backIcon {
     left: 20px;
 }
 
-.homeButton {
+.homeIcon {
     right: 20px;
 }
 
@@ -67,7 +67,6 @@ body, html {
     height: 80%;   
     
 }
-
 
 .logo {
     width: 50px;
@@ -92,14 +91,15 @@ body, html {
 .backIcon {
     cursor: pointer;
     font-size: 25px;
+    
 }
 
-.inputGroup {
+form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
-.inputField {
+.input {
     width: 100%;
     padding: 10px;
     border: 1.5px solid #ccc;
@@ -128,5 +128,66 @@ body, html {
     background-color: #1FA0BD; 
 }
 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    animation: fadeOut 3s ease-in-out forwards;
+}
 
+.popup-circle {
+    width: 2cm;
+    height: 2cm;
+    background: #4D9B91;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+.popup-hexagon {
+    width: 24px;
+    height: 28px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.popupCheckMark {
+    color: #007BFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.popupText {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.popupLoading {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #007BFF;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
