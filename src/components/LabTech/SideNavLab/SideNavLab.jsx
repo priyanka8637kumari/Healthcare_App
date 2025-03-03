@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../Doctor/SideNavDoctor/SideNavDoc.module.css"
+import styles from "./SideNavLab.module.css"
 import dashboardicon from "../../../assets/minji/dashboardicon.png"
 import messageIcon from "../../../assets/minji/messageicon.png"
 import settingIcon from "../../../assets/minji/settingicon.png"

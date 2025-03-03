@@ -50,15 +50,13 @@ const LandingNavbar = () => {
       <div className={styles.navbarContainer}>
         <div className={styles.navbarBrand}>
           <img src={logo} alt="MediHub Logo" className={styles.logo} />
-          <span className={styles.brandName}>MediHub</span>
+          <span className={styles.brandName}>
+            <span className={styles.brandHighlight}>Medi</span>Hub
+          </span>
         </div>
 
-        <div className={styles.burgerMenu} onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        
+       
+
         <ul className={`${styles.navbarMenu} ${menuOpen ? styles.active : ""}`}>
           <li className={styles.navbarItem}>
             <a
@@ -96,6 +94,11 @@ const LandingNavbar = () => {
           <img src={phoneIcon} alt="Phone Icon" className={styles.phoneIcon} />
           Support
         </button>
+        <div className={styles.burgerMenu} onClick={toggleMenu}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </nav>
   );

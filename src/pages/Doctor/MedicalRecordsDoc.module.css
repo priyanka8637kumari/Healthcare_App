@@ -156,8 +156,7 @@
   .diagnosisHistory,.patientList{
     h3 {
         color:var(--primary-color);
-        margin-bottom: 1rem;
-        margin-left:0.5rem;
+        margin: 1rem 0 1rem 0.5rem;
     }
   }
   
