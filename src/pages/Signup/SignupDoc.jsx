@@ -8,7 +8,7 @@ import styles from "./SignupDoc.module.css";
 const SignupDoc = () => {
   const navigate = useNavigate(); 
   const handleCreateAccount = () => {
-      navigate("/edit-profile"); 
+    navigate("/edit-profile"); 
   };
 
   return (
