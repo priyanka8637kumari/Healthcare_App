@@ -1,0 +1,19 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 8rem; 
+  }
+  
+  .mainContent {
+    flex: 1;
+    margin-left: 300px; 
+    padding: 2rem;
+    background-color: #f0f9fb; 
+  }
+  

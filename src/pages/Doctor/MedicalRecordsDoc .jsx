@@ -150,59 +150,9 @@ const MedicalRecordsDoc = () => {
 
               {/* Right Section */}
               <div className={styles.rightSection}>
-                {/* Diagnosis History */}
-                <div className={styles.diagnosisHistory}>
-                  <h3>Diagnosis History</h3>
-                  <div className={styles.metrics}>
-                    <div className={styles.metric}>
-                      <img src={bloodCount} className={styles.metricIcons} />
-                      <h4>Blood Count</h4>
-                      <p>13/25</p>
-                      <div className={styles.metricSignWrapper}>
-                        <img src={greenTriangle} className={styles.triangleIcon} />
-                        <span>Higher than average</span>
-                      </div>
-                    </div>
-                    <div className={styles.metric}>
-                      <img src={bloodPressure} className={styles.metricIcons} />
-                      <h4>Blood Pressure</h4>
-                      <p>120 - 139 mmHg</p>
-                      <div className={styles.metricSignWrapper}>
-                        <img src={redTriangle} className={styles.triangleredIcon} />
-                        <span>Higher than normal</span>
-                      </div>
-                    </div>
-                    <div className={styles.metric}>
-                      <img src={heartRate} className={styles.metricIcons} />
-                      <h4>Heart Rate</h4>
-                      <p>120 bpm</p>
-                      <div className={styles.metricSignWrapper}>
-                        <img src={redTriangle} className={styles.triangleredIcon} />
-                        <span>Higher than normal</span>
-                      </div>
-                    </div>
-                    <div className={styles.metric}>
-                      <img src={bloodSugar} className={styles.metricIcons} />
-                      <h4>Blood Sugar</h4>
-                      <p>70-99 mg</p>
-                      <div className={styles.metricSignWrapper}>
-                        <img src={greenTriangle} className={styles.triangleIcon} />
-                        <span>Higher than average</span>
-                      </div>
-                    </div>
-                    <div className={styles.metric}>
-                      <img src={urineAnalysis} className={styles.metricIcons} />
-                      <h4>Urine Analysis</h4>
-                      <p>1.030</p>
-                      <div className={styles.metricSignWrapper}>
-                        <img src={redTriangle} className={styles.triangleredIcon} />
-                        <span>Higher than normal</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
 
-                            {/* Profile Section */}
+                {/* Profile Section */}
                 <div className={styles.profileSection}>
                    <div className={styles.topProfileSection}>
                    <div className={styles.patientInfo}>
@@ -255,7 +205,57 @@ const MedicalRecordsDoc = () => {
                     </div>
                   </div>
                 </div>
-
+                 {/* Diagnosis History */}
+                 <div className={styles.diagnosisHistory}>
+                  <h3>Diagnosis History</h3>
+                  <div className={styles.metrics}>
+                    <div className={styles.metric}>
+                      <img src={bloodCount} className={styles.metricIcons} />
+                      <h4>Blood Count</h4>
+                      <p>13/25</p>
+                      <div className={styles.metricSignWrapper}>
+                        <img src={greenTriangle} className={styles.triangleIcon} />
+                        <span>Higher than average</span>
+                      </div>
+                    </div>
+                    <div className={styles.metric}>
+                      <img src={bloodPressure} className={styles.metricIcons} />
+                      <h4>Blood Pressure</h4>
+                      <p>120 - 139 mmHg</p>
+                      <div className={styles.metricSignWrapper}>
+                        <img src={redTriangle} className={styles.triangleredIcon} />
+                        <span>Higher than normal</span>
+                      </div>
+                    </div>
+                    <div className={styles.metric}>
+                      <img src={heartRate} className={styles.metricIcons} />
+                      <h4>Heart Rate</h4>
+                      <p>120 bpm</p>
+                      <div className={styles.metricSignWrapper}>
+                        <img src={redTriangle} className={styles.triangleredIcon} />
+                        <span>Higher than normal</span>
+                      </div>
+                    </div>
+                    <div className={styles.metric}>
+                      <img src={bloodSugar} className={styles.metricIcons} />
+                      <h4>Blood Sugar</h4>
+                      <p>70-99 mg</p>
+                      <div className={styles.metricSignWrapper}>
+                        <img src={greenTriangle} className={styles.triangleIcon} />
+                        <span>Higher than average</span>
+                      </div>
+                    </div>
+                    <div className={styles.metric}>
+                      <img src={urineAnalysis} className={styles.metricIcons} />
+                      <h4>Urine Analysis</h4>
+                      <p>1.030</p>
+                      <div className={styles.metricSignWrapper}>
+                        <img src={redTriangle} className={styles.triangleredIcon} />
+                        <span>Higher than normal</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Illness Diagnosis & Documents */}
                 <div className={styles.detailSection}>
@@ -263,16 +263,16 @@ const MedicalRecordsDoc = () => {
                   <div className={styles.diagnosisWrapper}>
                     <h3>Illness Diagnosis</h3>
                     <ul>
-                      <li><span>Name:</span> Dyspareunia</li>
+                      <li><span>Name:</span> Chronic Rhinitis</li>
                       <li><span>Date:</span> 09.02.2025</li>
-                      <li><span>Treatment:</span> Antifungals, Pelvic Floor Therapy</li>
+                      <li><span>Treatment:</span> Intranasal corticosteroids, Antihistamines, Saline nasal sprays</li>
                     </ul>
                     <hr className={styles.sectionSeparator} />
                     <h3>Diagnosis & Tests</h3>
                     <ul>
-                      <li><img src={stetoskopIcon} alt="Stethoscope" />Pelvic Exam → Checks for infections, inflammation, or structural issues</li>
-                      <li><img src={stetoskopIcon} alt="Stethoscope" />Ultrasound / MRI → Detects endometriosis, fibroids, or cysts</li>
-                      <li><img src={stetoskopIcon} alt="Stethoscope" />Hormone Tests → Evaluates estrogen levels</li>
+                      <li><img src={stetoskopIcon} alt="Stethoscope" />StethoscopePhysical Examination → Checks for nasal inflammation and congestion</li>
+                      <li><img src={stetoskopIcon} alt="Stethoscope" />StethoscopeAllergy Tests → Skin prick or blood tests to rule out allergic causes</li>
+                      <li><img src={stetoskopIcon} alt="Stethoscope" />StethoscopeCT Scan → Evaluates sinuses and nasal passages for structural issues</li>
                     </ul>
                   </div>
 

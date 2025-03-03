@@ -13,6 +13,7 @@ import upIcon1 from "../../assets/minji/upstatic.png"
 import upIcon2 from "../../assets/minji/upstatic2.png"
 import upIcon3 from "../../assets/minji/upIcon3.png"
 import blueArrow from "../../assets/minji/blue arrow.png"
+import SearchBar from '../../components/SearchBar';
 
 const DoctorDashboard = () => {
   return (
@@ -23,11 +24,7 @@ const DoctorDashboard = () => {
         <SideNavDoc />
         <div className={styles.mainContent}>
           {/* Search Bar */}
-          <input 
-            type="text" 
-            placeholder="Search patients, records, appointments..." 
-            className={styles.searchBar} 
-          />
+          <SearchBar />
 
           {/* Welcome Section */}
           <div className={styles.welcomeSection}>
