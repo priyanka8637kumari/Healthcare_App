@@ -25,7 +25,7 @@ function App() {
         <Route path="/patient-dashboard" element={<PatientDashboard />}> </Route>
       </Routes>
     </Router>
-  );
+  );  
 }
 
 export default App;
