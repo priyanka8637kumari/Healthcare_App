@@ -6,6 +6,7 @@
     padding: 20px;
     box-sizing: border-box;
 }
+
 .leftSide, .rightSide {
     flex: 1;
     height: 100%;

@@ -17,7 +17,8 @@ const LoginDoc = () => {
     <div className={styles.container}>      
       <div className={styles.leftSide}>
         <img src={doctorImage} alt="Doctor" className={styles.image} />
-      </div>      
+      </div>    
+
       <div className={styles.rightSide}>        
         <FaArrowLeft className={styles.backIcon} onClick={() => navigate(-1)} />
         <FaHome className={styles.homeIcon} onClick={() => navigate("/")} />        
@@ -40,7 +41,8 @@ const LoginDoc = () => {
             <hr />
             <span>or</span>
             <hr />
-          </div>       
+          </div>  
+               
           <div className={styles.links}>
             <a href="/forgot-password" className={styles.forgotLink}>Forgot Password?</a>                  
             <p>
