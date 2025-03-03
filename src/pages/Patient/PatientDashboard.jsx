@@ -3,6 +3,13 @@ import styles from './PatientDashboard.module.css'
 import arrowIcon from "../../assets/patient/arrow.png";
 import headIcon from "../../assets/patient/headicon.png"
 import translateIcon from "../../assets/patient/translate.png"
+import phoneIcon from "../../assets/patient/phone.png"
+import locationIcon from "../../assets/patient/location.png"
+import walletIcon from "../../assets/patient/wallet.png"
+import quickHelp from "../../assets/patient/Quick help.png"
+import hospital from "../../assets/patient/Hospital.png"
+import ambulance from "../../assets/patient/Ambulance.png"
+import doctor from "../../assets/patient/Doctors.png"
 
 const PatientDashboard = () => {
   return (
@@ -11,25 +18,26 @@ const PatientDashboard = () => {
         {/* Side header Info */}
         <section className={styles.patientSidebarHeaderInfo}>
           <div className={styles.patientImage}>
-            <img src={arrowIcon} alt="" /> 
-            {/* test! remove */}
+            <img src={headIcon} alt="user avatar" /> 
           </div>
           <div className={styles.patientName}>
             <h1>Asher Wang</h1>
             <p>29 years old Stockholm</p>
           </div>
           <div className={styles.translateIcon}>
-            <img src="" alt="" />
+            <img src={translateIcon} alt="translate button" />
           </div>
           <div className={styles.dragIcon}>
-            <img src="" alt="" />
+            <img src={arrowIcon} alt="arrow button" />
           </div>
         </section>
         {/* Patient Info Card */}
         <section className={styles.patientInfoCard}>
           <div className={styles.infoCardIcons}>
-            <div className={styles.phoneCover}>
-              <img src="" alt="" />
+            <div className={styles.infoimg}>
+              <img src={phoneIcon} alt="contact icon" />
+              <img src={locationIcon} alt="location icon" />
+              <img src={walletIcon} alt="wallet icon" />
             </div>
             <div className={styles.patientStatus}>
               <div className={styles.patientBlood}>
@@ -60,22 +68,10 @@ const PatientDashboard = () => {
 
         {/* help button */}
         <section className={styles.helpCenter}>
-          <div className={styles.quickHelp}>
-            <img src="" alt="" />
-            <p>Quick Help</p>
-          </div>
-          <div className={styles.patientHospital}>
-            <img src="" alt="" />
-            <p>Hospital</p>
-          </div>
-          <div className={styles.patientAmbulance}>
-            <img src="" alt="" />
-            <p>Ambulance</p>
-          </div>
-          <div className={styles.Doctor}>
-            <img src="" alt="" />
-            <p>Doctor</p>
-          </div>
+          <img src={quickHelp} alt="quick help" id="quickHelp" />
+          <img src={hospital} alt="hospital" />
+          <img src={ambulance} alt="ambulance" />
+          <img src={doctor} alt="doctor" />
         </section>
 
         {/* appointment-section */}
