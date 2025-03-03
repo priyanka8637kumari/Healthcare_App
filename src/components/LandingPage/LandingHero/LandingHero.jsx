@@ -16,11 +16,11 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
       <div className={styles.heroContent}>
-        <h1 className={styles.heroTitle}>Dummy text title</h1>
+        <h1 className={styles.heroTitle}>Health: Unified & Accessible</h1>
         <p className={styles.heroDescription}>
-          Qualified doctors, handled directly by general doctors and experienced
-          specialists doctors. Qualified doctors, handled directly by general
-          doctors and experienced specialists doctors.
+        A Unified Healthcare System for Faster, Smarter, and More Secure Patient Care.
+        Our platform seamlessly connects hospitals, clinics, 
+        and healthcare providers to give you real-time access to critical patient data.
         </p>
         <button className={styles.heroButton} onClick={handleClick}>
           Confirm your role
