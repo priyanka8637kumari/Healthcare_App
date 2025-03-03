@@ -1,5 +1,8 @@
 import React from 'react'
 import styles from './PatientDashboard.module.css'
+import headIcon from "@/assets/patient/headicon.png";
+import translateIcon from "@/assets/patient/translate.png"
+import arrowIcon from "@/assets/patient/arrow.png"
 
 const PatientDashboard = () => {
   return (
@@ -8,17 +11,17 @@ const PatientDashboard = () => {
         {/* Side header Info */}
         <section className={styles.patientSidebarHeaderInfo}>
           <div className={styles.patientImage}>
-            <img src="" alt="" />
+            <img src={headIcon} alt="patientavatar" />
           </div>
           <div className={styles.patientName}>
             <h1>Asher Wang</h1>
             <p>29 years old Stockholm</p>
           </div>
           <div className={styles.translateIcon}>
-            <img src="" alt="" />
+            <img src={translateIcon} alt="translatebtn" />
           </div>
           <div className={styles.dragIcon}>
-            <img src="" alt="" />
+            <img src={arrowIcon} alt="arrow" />
           </div>
         </section>
         {/* Patient Info Card */}
@@ -100,7 +103,52 @@ const PatientDashboard = () => {
 
 
       <div className={styles.patinetMainPage}>
-        <div></div>
+        <div className={styles.patientEmergencyCall}>
+          <p>Emergency Call</p>
+          <img src="" alt="" />
+        </div>
+        <div className={styles.patientHealthRecords}>
+          <div className={styles.patientHeartBeat}>
+            <h2>78</h2>
+            <span>bpm</span>
+            <img src="" alt="" />
+            <h2>Heart Beat</h2>
+          </div>
+          <div className={styles.patientBloodPressure}>
+            <h2>100 / 70</h2>
+            <span>mmHg</span>
+            <img src="" alt="" />
+            <h2>BloodPressure</h2>
+          </div>
+          <div className={styles.patientHemolobin}>
+            <h2>15.5</h2>
+            <span>g/dL</span>
+            <img src="" alt="" />
+            <h2>Hemolobin</h2>
+          </div>
+          <div className={styles.patientSugarLevel}>
+            <h2>150</h2>
+            <span>bpm</span>
+            <img src="" alt="" />
+            <h2>Sugar Levels</h2>
+          </div>
+        </div>
+
+        <div className={styles.patientDiagnose}>
+          <div className={styles.patientDiagnoseTitle}>
+            <h3>Diagnose</h3>
+            <p>Date</p>
+            <img src="" alt="" />
+          </div>
+          <div className={styles.patientDiagnoseContent}>
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   )

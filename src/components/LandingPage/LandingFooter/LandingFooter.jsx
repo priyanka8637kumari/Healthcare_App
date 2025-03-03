@@ -15,7 +15,7 @@ const Footer = () => {
           <span className={styles.brandName}>MediHub</span>
         </div>
         <p className={styles.description}>
-          Transforming Healthcare with Smart Digital Solutions.
+          Transforming Healthcare with <br /> Smart Digital Solutions.
         </p>
         <div className={styles.socialIcons}>
           <img src={google} alt="google Icon" className={styles.icon} />
