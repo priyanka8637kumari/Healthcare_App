@@ -54,7 +54,7 @@
     color:#979797;
 
     .menuIcons{
-      filter: invert(100%);
+      filter: invert(50%);
     }
   
   }

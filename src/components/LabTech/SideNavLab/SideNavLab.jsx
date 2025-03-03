@@ -21,31 +21,31 @@ const SideNavLab = () => {
       <ul className={styles.list}>
         <li className={`${styles.listItem} ${styles.dashboardMenu}`}>
           <div className={styles.itemWrapper}>
-            <img src={dashboardicon} alt="Dashboard Icon" />
+            <img src={dashboardicon} alt="Dashboard Icon"className={styles.menuIcons} />
             <span>Dashboard</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={testresultIcon} alt="TestResult Icon" />
+            <img src={testresultIcon} alt="TestResult Icon" className={styles.menuIcons}/>
             <span>Blodkompatibilitet</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={bookIcon} alt="Prescription Icon" />
+            <img src={bookIcon} alt="Prescription Icon" className={styles.menuIcons}/>
             <span>Rapporter & Journaler</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={securityIcon} alt="Medical Records Icon" />
+            <img src={securityIcon} alt="Medical Records Icon"className={styles.menuIcons} />
             <span>Säkerhetsprotokoll</span>
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={messageIcon} alt="Messages Icon" />
+            <img src={messageIcon} alt="Messages Icon"className={styles.menuIcons} />
             <span>Messages</span>
             <img src={messageNumIcon} alt="Messages Number Icon"  />
           </div>
@@ -55,7 +55,7 @@ const SideNavLab = () => {
           <img 
             src={settingIcon} 
             alt="Settings Icon" 
-            style={{ width: '25px', height: '25px' }}
+            style={{ width: '25px', height: '25px' }}className={styles.menuIcons}
           />
 
             <span>Inställningar</span>
@@ -63,7 +63,7 @@ const SideNavLab = () => {
         </li>
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
-            <img src={logoutIcon} alt="Logout Icon" />
+            <img src={logoutIcon} alt="Logout Icon"className={styles.menuIcons}  />
             <span>LogOut</span>
           </div>
         </li>
