@@ -5,7 +5,6 @@ import arrowIcon from "../../../assets/minji/arrowIcon.png"
 import bellIcon from "../../../assets/minji/bellIcon.png"
 
 
-
 const HeaderLab = () => {
   return (
     <header className={styles.header}>
