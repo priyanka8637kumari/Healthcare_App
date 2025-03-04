@@ -1,0 +1,8 @@
+.languageDropdown {
+    background-color: #59B29F;
+    border: none;
+    color: white;
+    padding: 12px 14px;
+    border-radius: 1rem;  
+    cursor: pointer;
+  }

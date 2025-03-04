@@ -4,17 +4,25 @@ import { FaHome, FaArrowLeft } from "react-icons/fa";
 import logo from "/src/assets/landingPage/logo.png"; 
 import doctorImage from "/src/assets/loginDoc/doc2.png";
 import styles from "./Login.module.css"; 
+import { useState } from "react";
 
 const LoginDoc = () => {
   const navigate = useNavigate();
+  const magicTime =500;
+
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    navigate("/doctor-dashboard"); 
-  };
+    setIsFadingOut(true);
+    setTimeout(() => {
+      navigate("/doctor-dashboard");
+    }, magicTime);  
+  };  
+  
 
   return (
-    <div className={styles.container}>      
+    <div className={`${styles.container} ${isFadingOut ? styles.fadeOut : ""}`}>   
       <div className={styles.leftSide}>
         <img src={doctorImage} alt="Doctor" className={styles.image} />
       </div>    
@@ -54,5 +62,6 @@ const LoginDoc = () => {
     </div>
   );
 };
+
 
 export default LoginDoc;

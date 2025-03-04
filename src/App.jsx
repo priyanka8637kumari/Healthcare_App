@@ -40,7 +40,7 @@ function App() {
         <Route path="/labtech-dashboard" element={<LabTechDashboard />}> </Route>
         <Route path="/patient-dashboard" element={<PatientDashboard />}> </Route>
         {/* <Route path="/doctor-messages" element={< />}> </Route> */}
-        <Route path="/placeholderpage" element={<PlaceHolderPage />}> </Route>
+        <Route path="/placeholderpage" element={<PlaceHolderPage />} /> 
       </Routes>
     </Router>
   );  
