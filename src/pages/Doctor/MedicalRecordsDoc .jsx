@@ -62,7 +62,7 @@ const MedicalRecordsDoc = () => {
                       <img src={patient1Image} className={styles.patientImage} alt="Patient" />
                       <div className={styles.patientDetails}>
                         <span className={styles.patientName}>Minji Kim</span>
-                        <span className={styles.visitReason}>Annual Check-up</span>
+                        <span className={styles.visitReason}>Acute Check-up</span>
                       </div>
                       <img src={ellipsisIcon} alt="ellipsis" />
                     </div>
@@ -105,8 +105,8 @@ const MedicalRecordsDoc = () => {
                     <div className={styles.patientInfo}>
                       <img src={patient5Image} className={styles.patientImage} alt="Patient" />
                       <div className={styles.patientDetails}>
-                        <span className={styles.patientName}>Emily Johnson</span>
-                        <span className={styles.visitReason}>Prenatal Check-up</span>
+                        <span className={styles.patientName}>Bianca Ingrosso</span>
+                        <span className={styles.visitReason}>Check-up</span>
                       </div>
                       <img src={ellipsisIcon} alt="ellipsis" />
                     </div>

@@ -20,7 +20,7 @@
   }
 
   .logo {
-    width: 40px; 
+    width:15rem;
     margin-right: 10px;
   }
 
@@ -54,7 +54,7 @@
     color:#979797;
 
     .menuIcons{
-      filter: invert(100%);
+      filter: invert(50%);
     }
   
   }
