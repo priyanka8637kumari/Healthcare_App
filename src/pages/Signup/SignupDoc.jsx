@@ -2,13 +2,13 @@ import React from "react";
 import { FaHome, FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; 
 import logo from "/src/assets/landingPage/logo.png"; 
-import doctorImage from "/src/assets/loginDoc/doc2.png";  
+import doctorImage from "/src/assets/loginDoc/doc4.png";  
 import styles from "./SignupDoc.module.css"; 
 
 const SignupDoc = () => {
   const navigate = useNavigate(); 
   const handleCreateAccount = () => {
-    navigate("/edit-profile"); 
+    navigate("/edit-profile/doctor"); 
   };
 
   return (

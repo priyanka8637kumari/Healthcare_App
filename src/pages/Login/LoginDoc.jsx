@@ -54,7 +54,7 @@ const LoginDoc = () => {
           <div className={styles.links}>
             <a href="/forgot-password" className={styles.forgotLink}>Forgot Password?</a>                  
             <p>
-              Don&apos;t have an account? <a href="/signup" className={styles.signupLink}>Sign Up</a>
+              Don&apos;t have an account? <a href="/signup/doctor" className={styles.signupLink}>Sign Up</a>
             </p>
           </div>
         </div>
