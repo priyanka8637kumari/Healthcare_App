@@ -20,7 +20,6 @@ import examTwo from "../../assets/patient/exam2.png"
 import examThree from "../../assets/patient/exam3.png"
 import examFour from "../../assets/patient/exam4.png"
 import examFive from "../../assets/patient/exam5.png"
-import examSix from "../../assets/patient/exam6.png"
 
 const PatientDashboard = () => {
   return (
@@ -131,7 +130,7 @@ const PatientDashboard = () => {
             <img src={examThree} alt="" />
             <img src={examFour} alt="" />
             <img src={examFive} alt="" />
-            <img src={examSix} alt="" />
+            <img src={examFive} alt="" />
           </div>
         </div>
       </div>

@@ -200,4 +200,41 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  padding: 40px;
+}
+
+.emergencyCall {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 265px;
+  height: 43px;
+  background-color: #F3705F;
+  color: white;
+  border-radius: 17px;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.patientHealth {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.diagnose {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  .diagnoseTitle {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.exams {
+  display: flex;
+  justify-content: space-between;
 }
