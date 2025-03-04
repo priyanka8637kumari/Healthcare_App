@@ -11,7 +11,7 @@ const roles = [
   },
   {
     name: "Lab Technician",
-    image: "src/assets/landingPage/labTech.png",
+    image: "src/assets/landingPage/labTech1.jpg",
     loginPath: "/login/labTech",
   },
   {

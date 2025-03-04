@@ -8,6 +8,7 @@ import EditProfileDoc from './pages/EditProfile/EditProfileDoc';
 import MedicalRecordsDoc from './pages/Doctor/MedicalRecordsDoc ';
 import ViewAppointments from './pages/Doctor/ViewAppointments';
 import PatientDashboard from './pages/Patient/PatientDashboard';
+import PlaceHolderPage from './components/PlaceHolderPage/PlaceHolderPage';
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         <Route path="/doctor-viewappointments" element={<ViewAppointments />}></Route>
         <Route path="/labtech-dashboard" element={<LabTechDashboard />}> </Route>
         <Route path="/patient-dashboard" element={<PatientDashboard />}> </Route>
+        {/* <Route path="/doctor-messages" element={< />}> </Route> */}
+        <Route path="/placeholderpage" element={<PlaceHolderPage />}> </Route>
       </Routes>
     </Router>
   );  

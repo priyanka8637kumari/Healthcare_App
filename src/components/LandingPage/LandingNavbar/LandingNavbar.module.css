@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 4px 10px #dad6d6;
+  box-shadow: 0 4px 10px #e6e3e3;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -18,7 +18,7 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .navbarMenu {
@@ -35,9 +35,9 @@
   font-weight: bold;
 }
 
-/* .brandHighlight {
+ .brandHighlight {
   color: black; 
-} */
+} 
 
 .logo {
   width: 40px;
@@ -60,7 +60,7 @@
   text-decoration: none;
   color: var(--text-color);
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .navbarItem a.active {
@@ -78,7 +78,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .burgerMenu {

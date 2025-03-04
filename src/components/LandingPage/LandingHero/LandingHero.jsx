@@ -19,8 +19,7 @@ const HeroSection = () => {
         <h1 className={styles.heroTitle}>Health: Unified & Accessible</h1>
         <p className={styles.heroDescription}>
         A Unified Healthcare System for Faster, Smarter, and More Secure Patient Care.
-        Our platform seamlessly connects hospitals, clinics, 
-        and healthcare providers to give you real-time access to critical patient data.
+        
         </p>
         <button className={styles.heroButton} onClick={handleClick}>
           Confirm your role
