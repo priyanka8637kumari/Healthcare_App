@@ -1,0 +1,71 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.318);
+    z-index: 1040;
+  }
+  
+  .modal {
+    position: fixed;
+    width:430px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modalWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem
+  }
+  .modalWrapper h2{
+    font-weight: 400;
+  }
+
+  .modalWrapper p{
+    color: #6C7278}
+  
+  .modalButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap:2rem
+  }
+  
+  .logoutButton, .cancelButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logoutButton {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .cancelButton {
+    border:1px solid #DCE4E8;
+    background-color: none;
+  }
+  .modal, .backdrop {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+  }
