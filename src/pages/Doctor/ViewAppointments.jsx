@@ -2,8 +2,8 @@ import React from 'react'
 import styles from './ViewAppointments.module.css';
 import HeaderDoctor from '../../components/Doctor/HeaderDoctor/HeaderDoctor';
 import SideNavDoc from '../../components/Doctor/SideNavDoctor/SideNavDoc';
-import arrowIcon from "../../assets/minji/arrowicon.png"
 import blueArrow from "../../assets/minji/blue arrow.png"
+
 
 const ViewAppointments = () => {
   return (

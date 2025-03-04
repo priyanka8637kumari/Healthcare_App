@@ -6,6 +6,7 @@ import LabTechDashboard from './pages/LabTechnician/LabTechDashboard';
 import SignupDoc from './pages/Signup/SignupDoc';
 import MedicalRecordsDoc from './pages/Doctor/MedicalRecordsDoc ';
 import ViewAppointments from './pages/Doctor/ViewAppointments';
+import DoctorMessage from './pages/Doctor/DoctorMessage';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/doctor-dashboard" element={<DoctorDashboard />}> </Route>
         <Route path="/doctor-medicalrecords" element={<MedicalRecordsDoc />}> </Route>
         <Route path="/doctor-viewappointments" element={<ViewAppointments />}></Route>
+        <Route path="/doctor-message" element={<DoctorMessage />}> </Route>
         <Route path="/labtech-dashboard" element={<LabTechDashboard />}> </Route>
       </Routes>
     </Router>
