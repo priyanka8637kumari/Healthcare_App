@@ -2,9 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from "./pages/LandingPage/Landingpage"
 import DoctorDashboard from './pages/Doctor/DoctorDashboard';
 import LoginDoc from './pages/Login/LoginDoc';
+import LoginLabTech from './pages/Login/LoginLabTech';
+import LoginPatient from './pages/Login/LoginPatient';
 import LabTechDashboard from './pages/LabTechnician/LabTechDashboard';
 import SignupDoc from './pages/Signup/SignupDoc';
+import SignupLabTech from './pages/Signup/SignupLabTech'; 
+import SignupPatient from './pages/Signup/SignupPatient';
 import EditProfileDoc from './pages/EditProfile/EditProfileDoc';
+import EditProfileLabTechnician from './pages/EditProfile/EditProfileLabTechnician';
+import EditProfilePatient from './pages/EditProfile/EditProfilePatient';
 import MedicalRecordsDoc from './pages/Doctor/MedicalRecordsDoc ';
 import ViewAppointments from './pages/Doctor/ViewAppointments';
 import PatientDashboard from './pages/Patient/PatientDashboard';
@@ -16,8 +22,14 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login/doctor" element={<LoginDoc />} />
-        <Route path="/signup" element={<SignupDoc />} />
-        <Route path="/edit-profile" element={<EditProfileDoc />} />
+        <Route path="/login/labtech" element={<LoginLabTech />} />
+        <Route path="/login/patient" element={<LoginPatient />} />  
+        <Route path="/signup/doctor" element={<SignupDoc />} />
+        <Route path="/signup/labtech" element={<SignupLabTech />} />
+        <Route path="/signup/patient" element={<SignupPatient />} />  
+        <Route path="/edit-profile/doctor" element={<EditProfileDoc />} />
+        <Route path="/edit-profile/labtech" element={<EditProfileLabTechnician />} />
+        <Route path="/edit-profile/Patient" element={<EditProfilePatient />} />
         <Route path="/doctor-dashboard" element={<DoctorDashboard />}> </Route>
         <Route path="/doctor-medicalrecords" element={<MedicalRecordsDoc />}> </Route>
         <Route path="/doctor-viewappointments" element={<ViewAppointments />}></Route>
