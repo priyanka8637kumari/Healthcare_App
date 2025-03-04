@@ -3,6 +3,7 @@ import styles from "../../Doctor/HeaderDoctor/HeaderDoctor.module.css"
 import labTechImg from "../../../assets/minji/labtechnician.png"
 import arrowIcon from "../../../assets/minji/arrowIcon.png"
 import bellIcon from "../../../assets/minji/bellIcon.png"
+import headerStyles from "./HeaderLab.module.css"
 
 
 const HeaderLab = () => {
@@ -32,7 +33,7 @@ const HeaderLab = () => {
 
 
       <div className={styles.rightSection}>
-        <select className={styles.languageDropdown}>
+        <select className={headerStyles.languageDropdown}>
         <option>Svenska</option>
         <option>English
           </option>

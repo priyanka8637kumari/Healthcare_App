@@ -19,13 +19,13 @@ function App() {
         <Route path="/login/doctor" element={<LoginDoc />} />
         <Route path="/signup" element={<SignupDoc />} />
         <Route path="/edit-profile" element={<EditProfileDoc />} />
-        <Route path="/doctor-dashboard" element={<DoctorDashboard />}> </Route>
-        <Route path="/doctor-medicalrecords" element={<MedicalRecordsDoc />}> </Route>
-        <Route path="/doctor-viewappointments" element={<ViewAppointments />}></Route>
-        <Route path="/labtech-dashboard" element={<LabTechDashboard />}> </Route>
-        <Route path="/patient-dashboard" element={<PatientDashboard />}> </Route>
+        <Route path="/doctor-dashboard" element={<DoctorDashboard />} /> 
+        <Route path="/doctor-medicalrecords" element={<MedicalRecordsDoc />} /> 
+        <Route path="/doctor-viewappointments" element={<ViewAppointments />} />
+        <Route path="/labtech-dashboard" element={<LabTechDashboard />} /> 
+        <Route path="/patient-dashboard" element={<PatientDashboard />} /> 
         {/* <Route path="/doctor-messages" element={< />}> </Route> */}
-        <Route path="/placeholderpage" element={<PlaceHolderPage />}> </Route>
+        <Route path="/placeholderpage" element={<PlaceHolderPage />} /> 
       </Routes>
     </Router>
   );  

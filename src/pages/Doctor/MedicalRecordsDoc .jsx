@@ -28,6 +28,16 @@ import ellipsisIcon from "../../assets/minji/ellipsis-vertical.png";
 import cloudIcon from "../../assets/minji/cloud.png"
 
 const MedicalRecordsDoc = () => {
+  // const patientList = [
+  //   { image: patient1Image, name: "Minji Kim", visitReason: "Acute Check-up" },
+  //   { image: patient4Image, name: "Swarna Lekha", visitReason: "Follow-up" },
+  //   { image: patient2Image, name: "Nakashima Mika", visitReason: "Consultation" },
+  //   { image: patient3Image, name: "Jamie Fox", visitReason: "Test Results" },
+  //   { image: patient5Image, name: "Bianca Ingrosso", visitReason: "Check-up" },
+  //   { image: patient6Image, name: "Agata Johansson", visitReason: "Allergy Consultation" },
+  //   { image: patient7Image, name: "Sophia Rodriguez", visitReason: "Follow-up" },
+  //   { image: patient8Image, name: "Uros Mimic", visitReason: "Follow-up" },
+  // ];
   return (
     <div className={styles.dashboardContainer}>
       <HeaderDoctor />

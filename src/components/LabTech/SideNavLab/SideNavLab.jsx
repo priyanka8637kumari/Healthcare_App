@@ -34,7 +34,7 @@ const SideNavLab = () => {
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
             <img src={bookIcon} alt="Prescription Icon" className={styles.menuIcons}/>
-            <span>Rapporter & Journaler</span>
+            <span>Analytics och rapporter</span>
           </div>
         </li>
         <li className={styles.listItem}>
@@ -46,7 +46,7 @@ const SideNavLab = () => {
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
             <img src={messageIcon} alt="Messages Icon"className={styles.menuIcons} />
-            <span>Messages</span>
+            <span>Meddelanden</span>
             <img src={messageNumIcon} alt="Messages Number Icon"  />
           </div>
         </li>
@@ -64,7 +64,7 @@ const SideNavLab = () => {
         <li className={styles.listItem}>
           <div className={styles.itemWrapper}>
             <img src={logoutIcon} alt="Logout Icon"className={styles.menuIcons}  />
-            <span>LogOut</span>
+            <span>Utloggning</span>
           </div>
         </li>
       </ul>
