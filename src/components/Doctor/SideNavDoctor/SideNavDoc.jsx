@@ -24,10 +24,7 @@ const SideNavDoc = () => {
   const closeLogoutModal = () => setIsLogoutModalOpen(false);
 
   const handleLogout = () => {
-    // Perform any logout logic here (e.g., clearing local storage, tokens, etc.)
-    // For example:
-    // localStorage.removeItem('userToken');
-    // clearUserSession(); // This would be your custom function to clear user data
+    // Perform any logout logic here (e.g., clearing local storage, tokens, etc.) for future usage
 
     // Close the modal
     closeLogoutModal();

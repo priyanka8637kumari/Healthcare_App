@@ -12,9 +12,12 @@ body, html {
     height: 100vh;
     padding: 20px;
     gap: 10px;
-    
-    
+    transition: opacity 0.3s ease-out;
 }
+
+.fadeOut {
+    opacity: 0;
+  }
 
 .leftSide, .rightSide {
     flex: 1;
