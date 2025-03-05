@@ -2,6 +2,7 @@ import react from "react";
 import styles from "./DoctorMessage.module.css";
 import HeaderDoctor from "../../components/Doctor/HeaderDoctor/HeaderDoctor";
 import SideNavDoc from "../../components/Doctor/SideNavDoctor/SideNavDoc";
+import Michael from "../../assets/landingPage/Michael.png"
 
 const chatData = [
   {
@@ -83,7 +84,7 @@ const DoctorMessage = () => {
             <input
               type="text"
               placeholder="Search name, chat, etc"
-            className={styles.topSearchBar}
+              className={styles.topSearchBar}
             />
           </div>
           <div className={styles.messageContent}>
@@ -168,11 +169,13 @@ const DoctorMessage = () => {
                         </span>
                         <span className={styles.chatTime}>{chat.time}</span>
                       </div>
-                      <div className={styles.chatMessage}>{chat.message}</div>
+                      <div className={styles.chatBody}>
+                        <div className={styles.chatMessage}>{chat.message}</div>
+                        {chat.count && (
+                          <div className={styles.unreadCount}>{chat.count}</div>
+                        )}
+                      </div>
                     </div>
-                    {chat.count && (
-                      <div className={styles.unreadCount}>{chat.count}</div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -180,39 +183,57 @@ const DoctorMessage = () => {
 
             {/* Chat Window */}
             <div className={styles.chatWindow}>
-              <div className={styles.chatHeaderRight}>Dr. Michael Brown</div>
-              <div className={styles.chatMessages}>
-                <div className={styles.messageBox}>
-                  <div className={styles.message}>
-                    Sure, Dr. Brown. Let me check the schedule for you.
-                  </div>
-                  <div className={styles.response}>
-                    The Geriatric Care session is scheduled for 2:00 PM to 4:00
-                    PM tomorrow.
-                  </div>
-                  <div className={styles.message}>
-                    Thank you. Can you provide me the list of patients and their
-                    conditions?
-                  </div>
-                  <div className={styles.response}>
-                    Of course. The patients are:
-                    <ul>
-                      <li>James Wilson - Arthritis Management</li>
-                      <li>Mary Johnson - Diabetes Monitoring</li>
-                      <li>Susan Lee - Hypertension Check-Up</li>
-                      <li>Robert Brown - Heart Disease Follow-Up</li>
-                      <li>Emily Thompson - Medication Review</li>
-                    </ul>
-                  </div>
+              <div className={styles.headerRight}>
+                <img
+                  src={Michael}
+                  alt="Dr. Michael Brown"
+                  className={styles.avatarRight}
+                />
+                <div>
+                  <h4>Dr. Michael Brown</h4>
+                  <p>last seen recently</p>
+                </div>
+                {/* <FaEllipsisH className={styles.options} /> */}
+              </div>
+              <div className={styles.chatBodyRight}>
+                <div className={styles.messageReceived}>
+                  Sure, Dr. Brown. Let me check the schedule for you.
+                </div>
+                <div className={styles.messageSent}>
+                  The Geriatric Care session is scheduled for 2:00 PM to 4:00 PM
+                  tomorrow. You have five patients lined up.
+                </div>
+                <div className={styles.messageReceived}>
+                  Thank you. Can you please provide me the list of patients and
+                  their conditions?
+                </div>
+                <div className={styles.messageSent}>
+                  <p>Of course. The patients are:</p>
+                  <ul>
+                    <li>1. James Wilson - Arthritis Management</li>
+                    <li>2. Mary Johnson - Diabetes Monitoring</li>
+                    <li>3. Susan Lee - Hypertension Check-Up</li>
+                    <li>4. Robert Brown - Heart Disease Follow-Up</li>
+                    <li>5. Emily Thompson - Medication Review</li>
+                  </ul>
+                </div>
+                <div className={styles.messageReceived}>
+                  Great, thanks for the information. I&apos;ll be prepared for
+                  the session.
+                </div>
+                <div className={styles.messageSent}>
+                  You&apos;re welcome, Dr. Brown. If you need anything else,
+                  just let me know.
                 </div>
               </div>
-              <div className={styles.chatInput}>
+              <div className={styles.chatFooter}>
+                {/* <FaPaperclip className={styles.icon} /> */}
                 <input
                   type="text"
                   placeholder="Type a message..."
-                  className={styles.inputField}
+                  className={styles.input}
                 />
-                <button className={styles.sendButton}>Send</button>
+                {/* <FaPaperPlane className={styles.icon} /> */}
               </div>
             </div>
           </div>

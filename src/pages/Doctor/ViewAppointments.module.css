@@ -1,209 +1,188 @@
 .dashboardContainer {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .contentWrapper {
-    display: flex;
-    flex: 1;
-    margin-top: 8rem; 
-  }
-  
-  .mainContent {
-    flex: 1;
-    margin-left: 300px; 
-    padding: 2rem;
-    background-color: #f0f9fb; 
-  }
-  
-  /* .container {
-    font-family: sans-serif;
-    padding: 20px;
-    background-color: #f8f9fa; 
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  } */
-  
-  /* Header Styles */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    margin-bottom: 10px;
-    /* background-color: #fff; */
-    border-radius: 5px;
-   
-  }
-  
-  .title {
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--primary-color);
-  }
-  
-  /* .dateRange {
-    font-size: 1.1rem;
-    color: #555;
-  } */
-  
-  .actions {
-    
-    display: flex;
-    gap: 40px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  }
-  
-  .dateSelect {
-    display: flex;
-    background-color: #93D1DF;
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    margin-right: 10px;
-    color: var(--primary-color);
-    font-size: 1rem;
-  }
-  
-  .iconButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: 5px;
-    color: #777;
-    transition: color 0.3s;
-  }
-  
-  .iconButton:hover {
-    color: #337ab7;
-  }
-  
-  /* Table Styles */
-  .table {
-    display: flex;
-    width: 100%;
-    overflow-x: auto;
-   border: 2px solid #F0F0F0;
-  }
-  
-  .timeColumn {
-    flex-shrink: 0;
-    width: 80px;
-    padding: 10px;
-    font-weight: medium;
-    color: #000000;
-    font-size: 0.85rem;
-   
-  }
+.contentWrapper {
+  display: flex;
+  flex: 1;
+  margin-top: 8rem;
+}
 
-  
-  .timeSlot {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #eee;
-    color: #777;
-    font-size: 0.9rem;
-  }
-  
-  .dayColumn {
-    flex: 1;
-    padding: 10px;
-    border-left: 1px solid #eee;
-  }
-  
-  .dayHeader {
-    padding: 10px;
-    text-align: center;
-    
-    color: #000000;
+.mainContent {
+  flex: 1;
+  margin-left: 300px;
+  padding: 2rem;
+  background-color: #f0f9fb;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.actions {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.dateSelect {
+  display: flex;
+  background-color: #e0f7fa;
+  padding: 6px 10px;
+  border-radius: 25px;
+  margin-right: 10px;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  color: #777;
+  transition: color 0.3s;
+}
+
+.iconButton:hover {
+  color: #337ab7;
+}
+
+/* Table Styles */
+.table {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  border: 2px solid #f0f0f0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.timeColumn {
+  flex-shrink: 0;
+  width: 80px;
+  padding: 10px;
+  font-weight: medium;
+  color: #000000;
   font-size: 0.85rem;
-    border-bottom: 1px solid #eee;
-  }
-  
-  /* Appointment Styles */
-  .appointment {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    box-shadow: 0 4px 10px #dad6d6;
-    font-size: 0.85rem;
-    color: var(--primary-color);
-    position: relative;
-  }
-  
-  .appointmentTitle {
-  
-    margin-bottom: 5px;
-    color: #000000;
-    text-align: center;
-  }
-  
-  .appointmentTime {
-    font-size: 0.85rem;
-    color: #9CA3AF;
-    margin-bottom: 5px;
-    text-align: center;
-  }
-  
-  .appointment ul {
-    padding-left: 20px;
-  }
-  
-  /* Appointment Color Styles */
-  .greenAppointment {
-    border-left: 5px solid #3BA285;
-  }
+}
 
-  .redAppointment {
-    border-left: 5px solid #DB3756;
-  }
-  
-  .yellowAppointment {
-    border-left: 5px solid #DB9B10;
-  }
-  
-  .blueAppointment {
-     border-left: 5px solid #1D3EAF;
-  }
-  
-  /* Appointment Position Styles */
-  /* .at08 {
+.timeSlot {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.dayColumn {
+  flex: 1;
+  padding: 10px;
+  border-left: 1px solid #eee;
+}
+
+.dayHeader {
+  padding: 10px;
+  text-align: center;
+
+  color: #000000;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Appointment Styles */
+.appointment {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 4px 10px #dad6d6;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.appointmentTitle {
+  margin-bottom: 5px;
+  color: #000000;
+  text-align: center;
+}
+
+.appointmentTime {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.appointment ul {
+  padding-left: 20px;
+}
+
+/* Appointment Color Styles */
+.greenAppointment {
+  border-left: 5px solid #3ba285;
+}
+
+.redAppointment {
+  border-left: 5px solid #db3756;
+}
+
+.yellowAppointment {
+  border-left: 5px solid #db9b10;
+}
+
+.blueAppointment {
+  border-left: 5px solid #1d3eaf;
+}
+
+/* Appointment Position Styles */
+/* .at08 {
     margin-top: 0;
   } */
-  
-  .at09 {
-    margin-top: 70px;
-  }
-  
-  .at10 {
-    margin-top: 70px;
-  }
-  
-  .at11 {
-    margin-top: 140px;
-  }
-  
-  .at12 {
-    margin-top: 70px;
-  }
-  
-  .at01 {
-    margin-top: 395px;
-  }
-  
-  .at02 {
-    margin-top: 70px;
-  }
-  
-  .at03 {
-    margin-top: 70px;
-  }
-  
-  .at04 {
-    margin-top: 632px;
-  }
-  
+
+.at09 {
+  margin-top: 70px;
+}
+
+.at10 {
+  margin-top: 70px;
+}
+
+.at11 {
+  margin-top: 140px;
+}
+
+.at12 {
+  margin-top: 70px;
+}
+
+.at01 {
+  margin-top: 395px;
+}
+
+.at02 {
+  margin-top: 70px;
+}
+
+.at03 {
+  margin-top: 70px;
+}
+
+.at04 {
+  margin-top: 632px;
+}
