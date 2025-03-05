@@ -3,6 +3,8 @@ import styles from './ViewAppointments.module.css';
 import HeaderDoctor from '../../components/Doctor/HeaderDoctor/HeaderDoctor';
 import SideNavDoc from '../../components/Doctor/SideNavDoctor/SideNavDoc';
 import blueArrow from "../../assets/minji/blue arrow.png"
+import view1 from "../../assets/landingPage/changeView1.png"
+import view2 from "../../assets/landingPage/changeView2.png"
 
 
 const ViewAppointments = () => {
@@ -17,25 +19,19 @@ const ViewAppointments = () => {
         <div className={styles.title}>View Appointment</div>
         
         <div className={styles.actions}>
-          {/* <select className={styles.dateSelect}>
-            <option>Feb 10 - Feb13</option>
-          </select> */}
+          
           <div className={styles.dateSelect}>
             <span>Feb 10 - Feb13</span>
             <img src={blueArrow} alt="arrow" />
           </div>
-          <button className={styles.iconButton}> {/* Icon */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list-ul" viewBox="0 0 16 16">
-              <path fillRule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
-            </svg>
+          <div className={styles.viewButtons}>
+          <button className={styles.iconButton1}> {/* Icon */}
+            <img src={view1} alt="view 1" />
           </button>
-          <button className={styles.iconButton}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-gear" viewBox="0 0 16 16">
-              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-              <path d="m9.757 1.546 4.243.613-1.01.663-3.4-1.002.603-4.238zM2.04 4.243 1.427 8.485l.663 1.01 4.238-.603-1.002-3.4zm9.718 9.718-4.243-.613 1.01-.663 3.4 1.002-.603 4.238zM4.243 2.04 8.485 1.427l1.01.663-.603 4.238-3.4-1.002z"/>
-              <path d="M6 4.375a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-.5-.5z"/>
-            </svg>
+          <button className={styles.iconButton2}>
+            <img src={view2} alt="view 2" />
           </button>
+          </div>
         </div>
       </div>
 
