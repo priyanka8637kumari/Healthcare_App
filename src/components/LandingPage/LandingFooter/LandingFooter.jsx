@@ -12,7 +12,9 @@ const Footer = () => {
       <div className={styles.left}>
         <div className={styles.navbarBrand}>
           <img src={logo} alt="MediHub Logo" className={styles.logo} />
-          <span className={styles.brandName}>MediHub</span>
+          <span className={styles.brandName}>
+            <span className={styles.brandHighlight}>Medi</span>Hub
+          </span>
         </div>
         <p className={styles.description}>
           Transforming Healthcare with <br /> Smart Digital Solutions.
