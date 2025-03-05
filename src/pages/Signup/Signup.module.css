@@ -72,12 +72,15 @@
 }
 
 .brandName {
-    color: #1FA0BD;
-    font-size: 2em;
+    color: black;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 25px;
 }
 
+.highlight {
+    color: var(--primary-color);; /* Blue color for 'Hub' */
+  }
 .welcomeText {
     color: #1C2A3A;
     font-size: 2em;
