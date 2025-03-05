@@ -85,11 +85,11 @@ const SideNavDoc = () => {
           </Link>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.itemWrapper}>
+        <Link to="/doctor-messages" className={styles.itemWrapper}>
             <img src={messageIcon} alt="Messages Icon" className={styles.menuIcons} />
             <span>Messages</span>
             <img src={messageNumIcon} alt="Messages Number Icon" className={styles.messageNumIcon} />
-          </div>
+          </Link>
         </li>
         <li className={styles.listItem}>
           <Link to="/placeholderpage" className={styles.itemWrapper}>
