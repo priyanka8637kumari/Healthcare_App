@@ -48,12 +48,12 @@ const SideNavDoc = () => {
             <span>Dashboard</span>
           </Link>
         </li>
-        {/* <li className={styles.listItem}>
+        <li className={styles.listItem}>
           <Link to="/placeholderpage" className={styles.itemWrapper}>
             <img src={patientsIcon} alt="Patients Icon" className={styles.menuIcons} />
             <span>Patients</span>
           </Link>
-        </li> */}
+        </li>
         <li className={styles.listItem}>
           <Link to="/placeholderpage" className={styles.itemWrapper}>
             <img src={prescriptionIcon} alt="Prescription Icon" className={styles.menuIcons} />
