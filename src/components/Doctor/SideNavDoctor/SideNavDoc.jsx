@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SideNavDoc.module.css";
-// import patientsIcon from "../../../assets/minji/patientsicon.png"
+import patientsIcon from "../../../assets/minji/patientsicon.png"
 import dashboardicon from "../../../assets/minji/dashboardicon.png"
 import prescriptionIcon from "../../../assets/minji/prescriptionicon.png"
 import medicalrecordsIcon from "../../../assets/minji/medicalrecordicon.png"
@@ -48,12 +48,12 @@ const SideNavDoc = () => {
             <span>Dashboard</span>
           </Link>
         </li>
-        {/* <li className={styles.listItem}>
+        <li className={styles.listItem}>
           <Link to="/placeholderpage" className={styles.itemWrapper}>
             <img src={patientsIcon} alt="Patients Icon" className={styles.menuIcons} />
             <span>Patients</span>
           </Link>
-        </li> */}
+        </li>
         <li className={styles.listItem}>
           <Link to="/placeholderpage" className={styles.itemWrapper}>
             <img src={prescriptionIcon} alt="Prescription Icon" className={styles.menuIcons} />
