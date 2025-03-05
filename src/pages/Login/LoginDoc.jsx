@@ -24,7 +24,9 @@ const LoginDoc = () => {
         <FaHome className={styles.homeIcon} onClick={() => navigate("/")} />        
         <div className={styles.loginBox}>          
           <img src={logo} alt="Care Sync Logo" className={styles.logo} />
-          <h1 className={styles.brandName}>MediHub</h1>
+          <h1 className={styles.brandName}>
+            Medi<span className={styles.highlight}>Hub</span>
+          </h1>
           <p className={styles.welcomeText}>Hi, Welcome Back Doctor!</p>
           <p className={styles.subText}>Hope you&apos;re doing fine.</p>
           <br />           
