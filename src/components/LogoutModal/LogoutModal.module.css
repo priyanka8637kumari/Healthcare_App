@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.318);
+    background-color: rgba(0, 0, 0, 0.561);
     z-index: 1040;
   }
   
@@ -68,4 +68,8 @@
   
   .fadeOut {
     opacity: 0;
+  }
+
+  .labTechLogoutButton {
+    background-color: #59B29F;
   }

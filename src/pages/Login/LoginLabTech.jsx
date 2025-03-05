@@ -4,17 +4,26 @@ import { FaHome, FaArrowLeft } from "react-icons/fa";
 import logo from "/src/assets/landingPage/logo.png"; 
 import labTechImage from "/src/assets/loginDoc/labTech4.png";
 import styles from "./Login.module.css"; 
+import { useState } from "react";
+
 
 const LoginLabTech = () => {
   const navigate = useNavigate();
+  const magicTime =300;
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    navigate("/labtech-dashboard"); 
-  };
+    setIsFadingOut(true);
+    setTimeout(() => {
+      console.log("Navigating to labtech-dashboard");
+      navigate("/labtech-dashboard");
+    }, magicTime);  
+  }; 
+  
 
   return (
-    <div className={styles.container}>      
+    <div className={`${styles.container} ${isFadingOut ? styles.fadeOut : ""}`}>      
       <div className={styles.leftSide}>
         <img src={labTechImage} alt="Doctor" className={styles.image} />
       </div>    

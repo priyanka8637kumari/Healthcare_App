@@ -12,9 +12,12 @@ const PlaceHolderPage = () => {
 
   return (
     <div className={styles.container}>
-      <img src={constructionImg} alt="Under Construction" className={styles.image} />
-      <h1 className={styles.title}>Sorry, this page is still under construction</h1>
-      <button onClick={handleGoBack} className={styles.button}>Go Back</button>
+      <button onClick={handleGoBack} className={styles.button}>← Go Back</button>
+      <div className={styles.content}>
+        <img src={constructionImg} alt="Under Construction" className={styles.image} />
+        <h1 className={styles.title}>This page is under construction</h1>
+        <p className={styles.message}>We're working hard to bring you new features. Please check back soon!</p>
+      </div>
     </div>
   );
 };

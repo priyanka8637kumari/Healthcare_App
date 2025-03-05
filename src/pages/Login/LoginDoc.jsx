@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const LoginDoc = () => {
   const navigate = useNavigate();
-  const magicTime =500;
+  const magicTime =300;
 
   const [isFadingOut, setIsFadingOut] = useState(false);
 
