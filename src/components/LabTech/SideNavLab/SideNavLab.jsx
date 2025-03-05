@@ -9,9 +9,24 @@ import testresultIcon from "../../../assets/minji/testresult.png"
 import securityIcon from "../../../assets/minji/securityalert.png"
 import bookIcon from "../../../assets/minji/book.png"
 import logo from "../../../assets/minji/medihublogo.png"
+import { Link } from "react-router-dom";
+import LogoutModal from "../../LogoutModal/LogoutModal";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const SideNavLab = () => {
+  const [isLogoutModalOpen, setIsLogoutModalOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const openLogoutModal = () => setIsLogoutModalOpen(true);
+  const closeLogoutModal = () => setIsLogoutModalOpen(false);
+
+  const handleLogout = () => {
+    closeLogoutModal();
+    navigate('/');
+  };
+
   return (
     <div className={styles.sidebar}>
      <div className={styles.navbarBrand}>
@@ -26,49 +41,54 @@ const SideNavLab = () => {
           </div>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.itemWrapper}>
+          <Link to="/placeholderpage" className={styles.itemWrapper}>
             <img src={testresultIcon} alt="TestResult Icon" className={styles.menuIcons}/>
             <span>Blodkompatibilitet</span>
-          </div>
+          </Link>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.itemWrapper}>
+          <Link to="/placeholderpage" className={styles.itemWrapper}>
             <img src={bookIcon} alt="Prescription Icon" className={styles.menuIcons}/>
             <span>Analytics och rapporter</span>
-          </div>
+          </Link>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.itemWrapper}>
+          <Link to="/placeholderpage" className={styles.itemWrapper}>
             <img src={securityIcon} alt="Medical Records Icon"className={styles.menuIcons} />
             <span>Säkerhetsprotokoll</span>
-          </div>
+          </Link>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.itemWrapper}>
+          <Link to="/placeholderpage" className={styles.itemWrapper}>
             <img src={messageIcon} alt="Messages Icon"className={styles.menuIcons} />
             <span>Meddelanden</span>
             <img src={messageNumIcon} alt="Messages Number Icon"  />
-          </div>
+          </Link>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.itemWrapper}>
+          <Link to="/placeholderpage" className={styles.itemWrapper}>
           <img 
             src={settingIcon} 
             alt="Settings Icon" 
             style={{ width: '25px', height: '25px' }}className={styles.menuIcons}
           />
-
             <span>Inställningar</span>
-          </div>
+          </Link>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.itemWrapper}>
+          <div className={styles.itemWrapper}onClick={openLogoutModal}>
             <img src={logoutIcon} alt="Logout Icon"className={styles.menuIcons}  />
             <span>Utloggning</span>
           </div>
         </li>
       </ul>
+      <LogoutModal
+        isOpen={isLogoutModalOpen}
+        onClose={closeLogoutModal}
+        onLogout={handleLogout}
+      />
     </div>
+    
   );
 };
 
