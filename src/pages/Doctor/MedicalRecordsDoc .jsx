@@ -18,7 +18,7 @@ import urineAnalysis from "../../assets/minji/urineanalysis.png";
 import greenTriangle from "../../assets/minji/greentriangle.png";
 import redTriangle from "../../assets/minji/redtriangle.png";
 import emailIcon from "../../assets/minji/emailicon.png";
-import messageIcon1 from "../../assets/minji/messageIcon1.png";
+import messageIcon1 from "../../assets/minji/messageicon1.png";
 import phoneIcon from "../../assets/minji/phoneicon.png";
 import videoIcon from "../../assets/minji/videoicon.png";
 import createNewRecordIcon from "../../assets/minji/createnewrecord.png";
