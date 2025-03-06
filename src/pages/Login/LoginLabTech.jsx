@@ -25,7 +25,7 @@ const LoginLabTech = () => {
   return (
     <div className={`${styles.container} ${isFadingOut ? styles.fadeOut : ""}`}>      
       <div className={styles.leftSide}>
-        <img src={labTechImage} alt="Doctor" className={styles.image} />
+        <img src={labTechImage} alt="Lab Technician" className={styles.image} />
       </div>    
 
       <div className={styles.rightSide}>        

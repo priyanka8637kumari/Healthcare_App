@@ -34,7 +34,7 @@ const EditProfilePatient = () => {
 return (
     <div className={styles.container}>
       <div className={styles.leftSide}>
-        <img src={patientImage} alt="Doctor" className={styles.image} />
+        <img src={patientImage} alt="Patient" className={styles.image} />
       </div>
 
       <div className={styles.rightSide}>            

@@ -14,7 +14,7 @@ const SignupLabTech = () => {
   return (
     <div className={styles.container}>      
       <div className={styles.leftSide}>
-        <img src={labTechImage} alt="Doctor" className={styles.image} />
+        <img src={labTechImage} alt="Lab Technician" className={styles.image} />
       </div>
       
       <div className={styles.rightSide}>       
