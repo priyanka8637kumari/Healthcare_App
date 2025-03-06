@@ -20,7 +20,7 @@ import redTriangle from "../../assets/minji/redtriangle.png";
 import emailIcon from "../../assets/minji/emailicon.png";
 import messageIcon1 from "../../assets/minji/messageIcon1.png";
 import phoneIcon from "../../assets/minji/phoneicon.png";
-import videoIcon from "../../assets/minji/videoIcon.png";
+import videoIcon from "../../assets/minji/videoicon.png";
 import createNewRecordIcon from "../../assets/minji/createnewrecord.png";
 import sharerecordsIcon from "../../assets/minji/sharerecord.png"
 import stetoskopIcon from "../../assets/minji/stetoskopicon.png"
