@@ -2,7 +2,7 @@ import React from "react";
 import { FaHome, FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; 
 import logo from "/src/assets/landingPage/logo.png"; 
-import labTechImage from "/src/assets/loginDoc/labTech5.jpeg"; 
+import labTechImage from "/src/assets/loginDoc/labTech4.png"; 
 import styles from "./Signup.module.css"; 
 
 const SignupLabTech = () => {

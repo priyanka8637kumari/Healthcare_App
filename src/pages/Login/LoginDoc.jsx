@@ -35,7 +35,7 @@ const LoginDoc = () => {
           <h1 className={styles.brandName}>
             Medi<span className={styles.highlight}>Hub</span>
           </h1>
-          <p className={styles.welcomeText}>Hi, Welcome Back Doctor!</p>
+          <p className={styles.welcomeText}>Hi, Welcome Back!</p>
           <p className={styles.subText}>Hope you&apos;re doing fine.</p>
           <br />           
           <div className={styles.inputGroup}>
