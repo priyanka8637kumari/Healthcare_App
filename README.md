@@ -17,7 +17,7 @@ MediHub is a React-based web application that provides solution to unify hospita
 
 - Clone the repository:
 
-- git clone https://github.com/azilinskaite/Project_2.git
+- git clone https://github.com/minzikimi/cc2-project.git
 
 - Navigate to the project folder:
 
