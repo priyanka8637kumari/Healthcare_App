@@ -46,7 +46,7 @@
 .statIcon {
   border:1px solid white;
   border-radius: 10px;
-  margin-right: 10px; /* Space between icon and title */
+  margin-right: 10px; 
 }
 .statValue {
   font-size: 24px;

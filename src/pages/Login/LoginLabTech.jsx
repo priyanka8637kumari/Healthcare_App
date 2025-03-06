@@ -4,17 +4,26 @@ import { FaHome, FaArrowLeft } from "react-icons/fa";
 import logo from "/src/assets/landingPage/logo.png"; 
 import labTechImage from "/src/assets/loginDoc/labTech4.png";
 import styles from "./Login.module.css"; 
+import { useState } from "react";
+
 
 const LoginLabTech = () => {
   const navigate = useNavigate();
+  const magicTime =300;
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    navigate("/labtech-dashboard"); 
-  };
+    setIsFadingOut(true);
+    setTimeout(() => {
+      console.log("Navigating to labtech-dashboard");
+      navigate("/labtech-dashboard");
+    }, magicTime);  
+  }; 
+  
 
   return (
-    <div className={styles.container}>      
+    <div className={`${styles.container} ${isFadingOut ? styles.fadeOut : ""}`}>      
       <div className={styles.leftSide}>
         <img src={labTechImage} alt="Doctor" className={styles.image} />
       </div>    
@@ -24,7 +33,9 @@ const LoginLabTech = () => {
         <FaHome className={styles.homeIcon} onClick={() => navigate("/")} />        
         <div className={styles.loginBox}>          
           <img src={logo} alt="Care Sync Logo" className={styles.logo} />
-          <h1 className={styles.brandName}>MediHub</h1>
+          <h1 className={styles.brandName}>
+            Medi<span className={styles.highlight}>Hub</span>
+          </h1>
           <p className={styles.welcomeText}>Hi, Welcome Back!</p>
           <p className={styles.subText}>Hope you&apos;re doing fine.</p>
           <br />           

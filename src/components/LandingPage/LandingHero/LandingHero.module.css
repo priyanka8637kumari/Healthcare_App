@@ -62,7 +62,7 @@
   }
   
   .heroButton:hover {
-    background-color: var(--secondary-color);
+    background-color:var(--primary-color);
     color: white;
   }
   

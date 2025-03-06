@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaHome, FaArrowLeft, FaCheck, FaSpinner } from "react-icons/fa";
 import logo from "/src/assets/landingPage/logo.png"; 
-import styles from "./EditProfileDoc.module.css"; 
+import styles from "./EditProfile.module.css"; 
 import patientImage from "/src/assets/loginDoc/patient.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -44,7 +44,9 @@ return (
         <div className={styles.editBox}>
           <div className={styles.logoContainer}>
             <img src={logo} alt="Care Sync Logo" className={styles.logo} />          
-            <h1 className={styles.brandName}>MediHub</h1>
+          <h1 className={styles.brandName}>
+            Medi<span className={styles.highlight}>Hub</span>
+          </h1>
           </div>
           <h2 className={styles.heading}>Fill Your Profile</h2>
           <div className={styles.inputGroup}>

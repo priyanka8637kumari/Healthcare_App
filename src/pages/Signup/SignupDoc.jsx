@@ -3,7 +3,7 @@ import { FaHome, FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; 
 import logo from "/src/assets/landingPage/logo.png"; 
 import doctorImage from "/src/assets/loginDoc/doc4.png";  
-import styles from "./SignupDoc.module.css"; 
+import styles from "./Signup.module.css"; 
 
 const SignupDoc = () => {
   const navigate = useNavigate(); 
@@ -23,7 +23,9 @@ const SignupDoc = () => {
 
         <div className={styles.loginBox}>
           <img src={logo} alt="Care Sync Logo" className={styles.logo} />          
-          <h1 className={styles.brandName}>MediHub</h1>
+          <h1 className={styles.brandName}>
+            Medi<span className={styles.highlight}>Hub</span>
+          </h1>
           <p className={styles.welcomeText}>Create Account</p>
           <p className={styles.subText}>We are here to help you!</p>         
 

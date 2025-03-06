@@ -29,15 +29,13 @@ const LabTechDashboard = () => {
         <SideNavLab />
         <div className={styles.mainContent}>
           <SearchBar />
-          
           <div className={styles.statsGrid}>
           <StatCard 
-          className={`${styles.statCard} ${styles.firstStatsBox}`} 
-          title="Total Lab Test" 
-          value="1052 / day" 
-          change="+15.2%" 
-          backgroundImage={vector}
-        />
+            className={`${styles.statCard} ${styles.firstStatsBox}`} 
+            title="Total Lab Test" 
+            value="1052 / day" 
+            change="+15.2%" 
+            backgroundImage={vector}/>
             <StatCard title="Total Out Patient" value="5715" change="+10.4%" />
             <StatCard title="Total In Patient" value="523" change="+4%" />
           </div>

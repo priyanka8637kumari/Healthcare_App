@@ -33,13 +33,13 @@ function App() {
         <Route path="/edit-profile/doctor" element={<EditProfileDoc />} />
         <Route path="/edit-profile/labtech" element={<EditProfileLabTechnician />} />
         <Route path="/edit-profile/Patient" element={<EditProfilePatient />} />
-        <Route path="/doctor-dashboard" element={<DoctorDashboard />}> </Route>
-        <Route path="/doctor-medicalrecords" element={<MedicalRecordsDoc />}> </Route>
-        <Route path="/doctor-viewappointments" element={<ViewAppointments />}></Route>
-        <Route path="/doctor-message" element={<DoctorMessage />}> </Route>
-        <Route path="/labtech-dashboard" element={<LabTechDashboard />}> </Route>
-        <Route path="/patient-dashboard" element={<PatientDashboard />}> </Route>
-        {/* <Route path="/doctor-messages" element={< />}> </Route> */}
+        <Route path="/doctor-dashboard" element={<DoctorDashboard />}/>
+        <Route path="/doctor-medicalrecords" element={<MedicalRecordsDoc />}/>
+        <Route path="/doctor-viewappointments" element={<ViewAppointments />}/>
+        <Route path="/doctor-message" element={<DoctorMessage />}/>
+        <Route path="/labtech-dashboard" element={<LabTechDashboard />}/>
+        <Route path="/patient-dashboard" element={<PatientDashboard />}/>
+        <Route path="/doctor-messages" element={<DoctorMessage />}/>
         <Route path="/placeholderpage" element={<PlaceHolderPage />} /> 
       </Routes>
     </Router>
