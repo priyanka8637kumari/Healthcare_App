@@ -1,8 +1,3 @@
-/* .container {
-    display: flex;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  } */
 
   .dashboardContainer {
     display: flex;
@@ -25,77 +20,22 @@
 
   
   .topSearchBar {
-    width: 100%; /* Make the input take full width of the header */
-    padding: 15px; /* Optional: Add padding for better spacing */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    border-color: 1px solid #979797; /* Optional: Add border to the input */
-  
-    border-radius: 8px; /* Optional: Add border radius to the input */
+    width: 100%; 
+    padding: 0.75rem; 
+    box-sizing: border-box; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 1rem; 
     margin-bottom: 10px;
+  }
+
+  .topSearchBar:focus {
+    outline: none;
   }
 
   .messageContent{
     display: flex;
   }
   
-  /* .sidebar {
-    width: 30%;
-    background: #f8f9fa;
-    padding: 10px;
-    border-right: 1px solid #ddd;
-  }
-  
-  .searchBar {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .chatList {
-    overflow-y: auto;
-    height: calc(100vh - 60px);
-  }
-  
-  .chatItem {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-  }
-  
-  .chatItem:hover {
-    background: #e9ecef;
-  }
-  
-  .role {
-    font-size: 12px;
-    color: gray;
-    margin-left: 5px;
-  }
-  
-  .chatInfo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .time {
-    font-size: 12px;
-    color: gray;
-    margin-right: 5px;
-  }
-  
-  .unread {
-    background: red;
-    color: white;
-    padding: 3px 7px;
-    border-radius: 50%;
-    font-size: 12px;
-  } */
-
-
   .chatContainer {
     width: 100%;
     max-width: 400px;
@@ -215,84 +155,13 @@
   
   
   /* .......Right Side........ */
-  /* .chatWindow {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .chatHeaderRight {
-    background: white;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    font-weight: bold;
-  }
-  
-  .chatMessages {
-    flex: 1;
-    padding: 15px;
-    overflow-y: auto;
-    background: #f8f9fa;
-  }
-  
-  .messageBox {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .message {
-    align-self: flex-start;
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px 0;
-    max-width: 60%;
-  }
-  
-  .response {
-    align-self: flex-end;
-    background: #d1ecf1;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px 0;
-    max-width: 60%;
-  }
-  
-  .chatInput {
-    display: flex;
-    padding: 10px;
-    background: white;
-    border-top: 1px solid #ddd;
-  }
-  
-  .inputField {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .sendButton {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .sendButton:hover {
-    background: #0056b3;
-  } */
-
+ 
   .chatWindow{
     flex: 1;
     display: flex;
     flex-direction: column;
-    /* width: 400px; */
     background: white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -326,14 +195,16 @@
   
   .chatBodyRight {
     padding: 10px;
+    gap: 20px;
     flex: 1;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    background: #f5f7fa;
   }
   
   .messageReceived {
-    background: #f0f0f0;
+    background: white;
     color: black;
     padding: 10px;
     border-radius: 10px;
@@ -343,13 +214,17 @@
   }
   
   .messageSent {
-    background: #e6f7ff;
+    background: #DFF8F9;
     color: black;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 5px;
     align-self: flex-end;
     font-size: 12px;
+  }
+  .messageSent ul{
+    list-style-type: none;
+    padding: 0;
   }
   
   .chatFooter {
