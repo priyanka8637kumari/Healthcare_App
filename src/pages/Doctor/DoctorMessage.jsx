@@ -2,7 +2,7 @@ import react from "react";
 import styles from "./DoctorMessage.module.css";
 import HeaderDoctor from "../../components/Doctor/HeaderDoctor/HeaderDoctor";
 import SideNavDoc from "../../components/Doctor/SideNavDoctor/SideNavDoc";
-import Michael from "../../assets/landingPage/Michael.png"
+import Michael from "../../assets/landingPage/Michael.png";
 
 const chatData = [
   {
@@ -83,71 +83,11 @@ const DoctorMessage = () => {
           <div className={styles.header}>
             <input
               type="text"
-              placeholder="Search name, chat, etc"
+              placeholder="Search by patient name, ID or test type"
               className={styles.topSearchBar}
             />
           </div>
           <div className={styles.messageContent}>
-            {/* <div className={styles.sidebar}>
-          <input
-              type="text"
-              placeholder="Search name, chat, etc"
-              className={styles.searchBar}
-            />
-            <div className={styles.chatList}>
-              {[
-                {
-                  name: "John Doe",
-                  role: "Patient",
-                  time: "09:30 AM",
-                  unread: 3,
-                },
-                {
-                  name: "Dr. Emily Smith",
-                  role: "Doctor",
-                  time: "10:15 AM",
-                  unread: 2,
-                },
-                {
-                  name: "Mary Johnson",
-                  role: "Lab Technician",
-                  time: "10:20 AM",
-                  unread: 2,
-                },
-                {
-                  name: "Dr. Michael Brown",
-                  role: "Doctor",
-                  time: "10:40 AM",
-                  unread: 0,
-                },
-                {
-                  name: "Susan Lee",
-                  role: "Lab Technician",
-                  time: "01:20 PM",
-                  unread: 1,
-                },
-                {
-                  name: "Kevin White",
-                  role: "Patient",
-                  time: "02:10 PM",
-                  unread: 2,
-                },
-              ].map((chat, index) => (
-                <div key={index} className={styles.chatItem}>
-                  <div>
-                    <strong>{chat.name}</strong>{" "}
-                    <span className={styles.role}>{chat.role}</span>
-                  </div>
-                  <div className={styles.chatInfo}>
-                    <span className={styles.time}>{chat.time}</span>
-                    {chat.unread > 0 && (
-                      <span className={styles.unread}>{chat.unread}</span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div> */}
             <div className={styles.chatContainer}>
               <div className={styles.searchBar}>
                 <input type="text" placeholder="Search name, chat, etc" />
@@ -196,7 +136,7 @@ const DoctorMessage = () => {
                 {/* <FaEllipsisH className={styles.options} /> */}
               </div>
               <div className={styles.chatBodyRight}>
-                <div className={styles.messageReceived}>
+                <div className={styles.messageSent}>
                   Sure, Dr. Brown. Let me check the schedule for you.
                 </div>
                 <div className={styles.messageSent}>
