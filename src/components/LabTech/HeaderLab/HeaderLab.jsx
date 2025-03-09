@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../Doctor/HeaderDoctor/HeaderDoctor.module.css"
 import labTechImg from "../../../assets/minji/labtechnician.png"
 import arrowIcon from "../../../assets/minji/arrowicon.png"
-import bellIcon from "../../../assets/minji/bellIcon.png"
+import bellIcon from "../../../assets/minji/bellicon.png"
 import headerStyles from "./HeaderLab.module.css"
 
 
