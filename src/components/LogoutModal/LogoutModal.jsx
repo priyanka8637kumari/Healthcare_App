@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactModal from 'react-modal';
 import styles from './LogoutModal.module.css';
-import logoutIcon from "../../assets/minji/LogoutModal.png"
+import logoutIcon from "../../assets/minji/logoutModal.png"
 import { useLocation } from 'react-router-dom';
 import labTechLogoutIcon from "../../assets/minji/labtechmodalicon.png"
 
